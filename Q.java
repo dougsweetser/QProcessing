@@ -12,20 +12,20 @@ public final class Q
         t = x = y = z = 0.0D;
     }
 
-    Q(double T)
+    Q(float T)
     {
         t = T;
         x = y = z = 0.0D;
     }
 
-    Q(double T, double X)
+    Q(float T, float X)
     {
         t = T;
         x = X;
         y = z = 0.0D;
     }
 
-    Q(double T, double X, double Y)
+    Q(float T, float X, float Y)
     {
         t = T;
         x = X;
@@ -33,7 +33,7 @@ public final class Q
         z = 0.0D;
     }
 
-    Q(double T, double X, double Y, double Z)
+    Q(float T, float X, float Y, float Z)
     {
         t = T;
         x = X;
@@ -146,39 +146,39 @@ public final class Q
         int endx = s.indexOf(" i");
         int endy = s.indexOf(" j");
         int endz = s.indexOf(" k");
-        Double t;
+        Float t;
         if(endt == -1)
         {
-            t = new Double(s.substring(0, s.length()));
-            this.t = t.doubleValue();
+            t = new Float(s.substring(0, s.length()));
+            this.t = t.floatValue();
             this.x = this.y = this.z = 0.0D;
             return this;
         }
-        t = new Double(s.substring(0, endt));
-        this.t = t.doubleValue();
+        t = new Float(s.substring(0, endt));
+        this.t = t.floatValue();
         if(endx == -1)
         {
             this.x = 0.0D;
         } else
         {
-            Double x = new Double(s.substring(endt + 2, endx));
-            this.x = x.doubleValue();
+            Float x = new Float(s.substring(endt + 2, endx));
+            this.x = x.floatValue();
         }
         if(endy == -1)
         {
             this.y = 0.0D;
         } else
         {
-            Double y = new Double(s.substring(Math.max(endt, endx) + 2, endy));
-            this.y = y.doubleValue();
+            Float y = new Float(s.substring(Math.max(endt, endx) + 2, endy));
+            this.y = y.floatValue();
         }
         if(endz == -1)
         {
             this.z = 0.0D;
         } else
         {
-            Double z = new Double(s.substring(Math.max(Math.max(endt, endx), endy) + 2, endz));
-            this.z = z.doubleValue();
+            Float z = new Float(s.substring(Math.max(Math.max(endt, endx), endy) + 2, endz));
+            this.z = z.floatValue();
         }
         return this;
     }
@@ -219,33 +219,33 @@ public final class Q
         return q;
     }
 
-    static double norm(Q q1)
+    static float norm(Q q1)
     {
-        double n = q1.t * q1.t + q1.x * q1.x + q1.y * q1.y + q1.z * q1.z;
+        float n = q1.t * q1.t + q1.x * q1.x + q1.y * q1.y + q1.z * q1.z;
         return n;
     }
 
-    static double sqrtNorm(Q q1)
+    static float sqrtNorm(Q q1)
     {
-        double n = Math.sqrt(q1.t * q1.t + q1.x * q1.x + q1.y * q1.y + q1.z * q1.z);
+        float n = Math.sqrt(q1.t * q1.t + q1.x * q1.x + q1.y * q1.y + q1.z * q1.z);
         return n;
     }
 
-    static double normVector(Q q1)
+    static float normVector(Q q1)
     {
-        double n = q1.x * q1.x + q1.y * q1.y + q1.z * q1.z;
+        float n = q1.x * q1.x + q1.y * q1.y + q1.z * q1.z;
         return n;
     }
 
-    static double sqrtNormVector(Q q1)
+    static float sqrtNormVector(Q q1)
     {
-        double n = Math.sqrt(q1.x * q1.x + q1.y * q1.y + q1.z * q1.z);
+        float n = Math.sqrt(q1.x * q1.x + q1.y * q1.y + q1.z * q1.z);
         return n;
     }
 
-    static double det(Q q1)
+    static float det(Q q1)
     {
-        double det = norm(q1);
+        float det = norm(q1);
         det *= det;
         return det;
     }
@@ -273,7 +273,7 @@ public final class Q
     static Q qinv(Q q1)
     {
         Q q = new Q();
-        double n = 1.0D / norm(q1);
+        float n = 1.0D / norm(q1);
         q.t = q1.t * n;
         q.x = -q1.x * n;
         q.y = -q1.y * n;
@@ -284,7 +284,7 @@ public final class Q
     static Q qadj(Q q1)
     {
         Q q = new Q();
-        double n = norm(q1);
+        float n = norm(q1);
         q.t = q1.t * n;
         q.x = -q1.x * n;
         q.y = -q1.y * n;
@@ -292,7 +292,7 @@ public final class Q
         return q;
     }
 
-    static Q qxs(Q q1, double s)
+    static Q qxs(Q q1, float s)
     {
         Q q = new Q();
         q.t = q1.t * s;
@@ -357,18 +357,18 @@ public final class Q
         return q;
     }
 
-    static double sinh(double r)
+    static float sinh(float r)
     {
         if(Math.abs(r) > 0.10000000000000001D)
             return (Math.exp(r) - Math.exp(-r)) / 2D;
-        double s = 1.0D;
+        float s = 1.0D;
         for(int i = 19; i > 2; i -= 2)
-            s = (s * r * r) / (double)(i * (i - 1)) + 1.0D;
+            s = (s * r * r) / (float)(i * (i - 1)) + 1.0D;
 
         return s * r;
     }
 
-    static double cosh(double r)
+    static float cosh(float r)
     {
         return (Math.exp(r) + Math.exp(-r)) / 2D;
     }
@@ -376,8 +376,8 @@ public final class Q
     static Q qsin(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 0.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 0.0D;
         if(vnorm != 0.0D)
             vfactor = (Math.cos(q1.t) * sinh(vnorm)) / vnorm;
         q = qxs(q1, vfactor);
@@ -388,8 +388,8 @@ public final class Q
     static Q qcos(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 0.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 0.0D;
         if(vnorm != 0.0D)
             vfactor = (-1D * Math.sin(q1.t) * sinh(vnorm)) / vnorm;
         q = qxs(q1, vfactor);
@@ -407,7 +407,7 @@ public final class Q
     static Q qasin(Q q1)
     {
         Q qv = new Q(0.0D, 1.0D);
-        double vnorm = sqrtNormVector(q1);
+        float vnorm = sqrtNormVector(q1);
         if(vnorm != 0.0D)
             qv = qvector(qxs(q1, 1.0D / vnorm));
         return qx(qv, qasinh(qx(q1, qconj(qv))));
@@ -416,7 +416,7 @@ public final class Q
     static Q qacos(Q q1)
     {
         Q qv = new Q(0.0D, 1.0D);
-        double vnorm = sqrtNormVector(q1);
+        float vnorm = sqrtNormVector(q1);
         if(vnorm != 0.0D)
             qv = qvector(qxs(q1, -1D / vnorm));
         return qx(qv, qacosh(q1));
@@ -426,7 +426,7 @@ public final class Q
     {
         Q qtemp1 = new Q();
         Q qv = new Q(0.0D, 1.0D);
-        double vnorm = sqrtNormVector(q1);
+        float vnorm = sqrtNormVector(q1);
         if(vnorm != 0.0D)
             qv = qvector(qxs(q1, 1.0D / vnorm));
         return qx(qconj(qv), qatanh(qx(q1, qv)));
@@ -435,8 +435,8 @@ public final class Q
     static Q qsinh(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 0.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 0.0D;
         if(vnorm != 0.0D)
             vfactor = (cosh(q1.t) * Math.sin(vnorm)) / vnorm;
         q = qxs(q1, vfactor);
@@ -447,8 +447,8 @@ public final class Q
     static Q qcosh(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 0.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 0.0D;
         if(vnorm != 0.0D)
             vfactor = (sinh(q1.t) * Math.sin(vnorm)) / vnorm;
         q = qxs(q1, vfactor);
@@ -492,8 +492,8 @@ public final class Q
     static Q qln(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 1.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 1.0D;
         if(vnorm != 0.0D)
             vfactor = Math.atan2(vnorm, q1.t) / vnorm;
         else
@@ -522,8 +522,8 @@ public final class Q
     static Q qexp(Q q1)
     {
         Q q = new Q();
-        double vnorm = sqrtNormVector(q1);
-        double vfactor = 0.0D;
+        float vnorm = sqrtNormVector(q1);
+        float vfactor = 0.0D;
         if(vnorm != 0.0D)
         {
             vfactor = (Math.exp(q1.t) * Math.sin(vnorm)) / vnorm;
@@ -537,7 +537,7 @@ public final class Q
         return q;
     }
 
-    static Q qtotheN(Q q1, double n)
+    static Q qtotheN(Q q1, float n)
     {
         Q q = new Q();
         if(normVector(q1) == 0.0D && q1.t > 0.0D)
@@ -565,10 +565,10 @@ public final class Q
         }
     }
 
-    double t;
-    double x;
-    double y;
-    double z;
+    float t;
+    float x;
+    float y;
+    float z;
     public static final Q qzero = new Q();
     public static final Q qone = new Q(1.0D);
 
