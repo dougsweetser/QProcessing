@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3604"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="196.15639"
+     inkscape:cy="656.01291"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1045"
+     inkscape:window-height="928"
+     inkscape:window-x="4"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2816"
+       sodipodi:cx="200.51527"
+       sodipodi:cy="399.29855"
+       sodipodi:rx="55.053314"
+       sodipodi:ry="55.053314"
+       d="m 206.64959,344.58807 a 55.053314,55.053314 0 1 1 -0.464,-0.05"
+       sodipodi:start="4.8240459"
+       sodipodi:end="11.098754"
+       sodipodi:open="true"
+       inkscape:export-filename="/Users/doug/Pictures/time_reversal.jpg.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 201.42857,370.93361 0,28.57143 -30.71428,-40"
+       id="path2818"
+       inkscape:export-filename="/Users/doug/Pictures/time_reversal.jpg.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       x="199.28572"
+       y="363.79074"
+       id="text2820"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/Users/doug/Pictures/time_reversal.jpg.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552"><tspan
+         sodipodi:role="line"
+         id="tspan2822"
+         x="199.28572"
+         y="363.79074">12</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Lend)"
+       id="path2824"
+       sodipodi:cx="210.35715"
+       sodipodi:cy="414.86218"
+       sodipodi:rx="43.214287"
+       sodipodi:ry="43.214287"
+       d="m 236.61478,380.54001 a 43.214287,43.214287 0 0 1 16.65538,29.22827"
+       sodipodi:start="5.3654428"
+       sodipodi:end="6.1650352"
+       transform="matrix(-1,0,0,1,410.22617,-16.428572)"
+       sodipodi:open="true"
+       inkscape:export-filename="/Users/doug/Pictures/time_reversal.jpg.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552" />
+    <g
+       id="g4052"
+       inkscape:export-filename="/Users/doug/space_reversal.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 338.21428,378.43361 0,28.57143 -30.71428,-40"
+         id="path4046" />
+    </g>
+    <g
+       id="g4055"
+       transform="matrix(-1,0,0,1,692.85714,0)"
+       inkscape:export-filename="/Users/doug/space_reversal.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552">
+      <path
+         id="path4057"
+         d="m 338.21428,378.43361 0,28.57143 -30.71428,-40"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4059"
+       width="45.714275"
+       height="60.357147"
+       x="301.42856"
+       y="359.50504"
+       inkscape:export-filename="/Users/doug/space_reversal.png"
+       inkscape:export-xdpi="299.68552"
+       inkscape:export-ydpi="299.68552" />
+  </g>
+</svg>
