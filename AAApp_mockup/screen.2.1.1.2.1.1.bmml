@@ -1,0 +1,67 @@
+<mockup version="1.0" skin="sketch" measuredW="1175" measuredH="758" mockupW="1144" mockupH="724">
+  <controls>
+    <control controlID="49" controlTypeID="__group__" x="31" y="34" w="725" h="721" measuredW="725" measuredH="721" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="725" h="721" measuredW="664" measuredH="666" zOrder="0" locked="false" isInGroup="49">
+          <controlProperties>
+            <src>./assets/animations.quaternions.2.png</src>
+            <text/>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Component" x="43" y="44" w="702" h="701" measuredW="702" measuredH="701" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/symbols.bmml#rotations and boosts</src>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Component" x="792" y="38" w="383" h="115" measuredW="383" measuredH="115" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C12%2C869%2C112%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C12%2C1003%2C112%22%20href%3D%22screen.2.1.1.2.1.1.bmml%22%20alt%3D%22screen.2.1.1.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C12%2C1137%2C112%22%20href%3D%22screen.3.1.1.2.1.1.bmml%22%20alt%3D%22screen.3.1.1.2.1.1%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C12%2C869%2C112%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C12%2C1003%2C112%22%20href%3D%22screen.2.1.1.2.1.1.bmml%22%20alt%3D%22screen.2.1.1.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C12%2C1137%2C112%22%20href%3D%22screen.3.1.1.2.1.1.bmml%22%20alt%3D%22screen.3.1.1.2.1.1%22%20id%3D%222%22/%3E</map>
+        <override controlID="0">
+          <borderStyle>none</borderStyle>
+        </override>
+        <override controlID="1">
+          <borderStyle>square</borderStyle>
+        </override>
+        <src>./assets/symbols.bmml#menu.quaternions</src>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Component" x="792" y="522" w="383" h="115" measuredW="383" measuredH="115" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22770%2C495%2C870%2C595%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22909%2C495%2C1009%2C595%22%20href%3D%22screen.1.1.1.2.2.1.bmml%22%20alt%3D%22screen.1.1.1.2.2.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221043%2C505%2C1133%2C585%22%20href%3D%22screen.1.1.1.2.3.1.bmml%22%20alt%3D%22screen.1.1.1.2.3.1%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22770%2C495%2C870%2C595%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22909%2C495%2C1009%2C595%22%20href%3D%22screen.1.1.1.2.2.1.bmml%22%20alt%3D%22screen.1.1.1.2.2.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221043%2C505%2C1133%2C585%22%20href%3D%22screen.1.1.1.2.3.1.bmml%22%20alt%3D%22screen.1.1.1.2.3.1%22%20id%3D%222%22/%3E</map>
+        <src>./assets/symbols.bmml#menu symmetries</src>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Component" x="792" y="643" w="383" h="115" measuredW="383" measuredH="115" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22768%2C616%2C868%2C716%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22902%2C618%2C1002%2C718%22%20href%3D%22screen.1.1.1.2.1.2.bmml%22%20alt%3D%22screen.1.1.1.2.1.2%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221036%2C618%2C1136%2C718%22%20href%3D%22screen.1.1.1.2.1.3.bmml%22%20alt%3D%22screen.1.1.1.2.1.3%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22768%2C616%2C868%2C716%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22902%2C618%2C1002%2C718%22%20href%3D%22screen.1.1.1.2.1.2.bmml%22%20alt%3D%22screen.1.1.1.2.1.2%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221036%2C618%2C1136%2C718%22%20href%3D%22screen.1.1.1.2.1.3.bmml%22%20alt%3D%22screen.1.1.1.2.1.3%22%20id%3D%222%22/%3E</map>
+        <src>./assets/symbols.bmml#menu views</src>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Component" x="792" y="401" w="383" h="115" measuredW="383" measuredH="115" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C374%2C869%2C474%22%20href%3D%22screen.1.1.1.1.1.1.bmml%22%20alt%3D%22screen.1.1.1.1.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C374%2C1137%2C474%22%20href%3D%22screen.1.1.1.3.1.1.bmml%22%20alt%3D%22screen.1.1.1.3.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C374%2C1003%2C474%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C374%2C869%2C474%22%20href%3D%22screen.1.1.1.1.1.1.bmml%22%20alt%3D%22screen.1.1.1.1.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C374%2C1137%2C474%22%20href%3D%22screen.1.1.1.3.1.1.bmml%22%20alt%3D%22screen.1.1.1.3.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C374%2C1003%2C474%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%222%22/%3E</map>
+        <src>./assets/symbols.bmml#menu boundareis</src>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Component" x="792" y="280" w="383" h="115" measuredW="383" measuredH="115" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C253%2C869%2C353%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C253%2C1003%2C353%22%20href%3D%22screen.1.1.2.2.1.1.bmml%22%20alt%3D%22screen.1.1.2.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C253%2C1137%2C353%22%20href%3D%22screen.1.1.3.2.1.1.bmml%22%20alt%3D%22screen.1.1.3.2.1.1%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C253%2C869%2C353%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C253%2C1003%2C353%22%20href%3D%22screen.1.1.2.2.1.1.bmml%22%20alt%3D%22screen.1.1.2.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C253%2C1137%2C353%22%20href%3D%22screen.1.1.3.2.1.1.bmml%22%20alt%3D%22screen.1.1.3.2.1.1%22%20id%3D%222%22/%3E</map>
+        <src>./assets/symbols.bmml#menu fields</src>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Component" x="792" y="159" w="383" h="115" measuredW="383" measuredH="115" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C132%2C869%2C232%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C133%2C1003%2C233%22%20href%3D%22screen.1.2.1.2.1.1.bmml%22%20alt%3D%22screen.1.2.1.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C132%2C1137%2C232%22%20href%3D%22screen.1.3.1.2.1.1.bmml%22%20alt%3D%22screen.1.3.1.2.1.1%22%20id%3D%222%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22769%2C132%2C869%2C232%22%20href%3D%22screen.1.1.1.2.1.1.bmml%22%20alt%3D%22screen.1.1.1.2.1.1%22%20id%3D%220%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22903%2C133%2C1003%2C233%22%20href%3D%22screen.1.2.1.2.1.1.bmml%22%20alt%3D%22screen.1.2.1.2.1.1%22%20id%3D%221%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221037%2C132%2C1137%2C232%22%20href%3D%22screen.1.3.1.2.1.1.bmml%22%20alt%3D%22screen.1.3.1.2.1.1%22%20id%3D%222%22/%3E</map>
+        <src>./assets/symbols.bmml#menu parameters</src>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="337" y="69" w="115" h="53" measuredW="378" measuredH="175" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/infinity.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
