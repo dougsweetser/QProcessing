@@ -1,0 +1,37 @@
+<mockup version="1.0" skin="sketch" measuredW="949" measuredH="755" mockupW="908" mockupH="721">
+  <controls>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="224" y="34" w="725" h="721" measuredW="725" measuredH="725" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/boundaries.2.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Image" x="530" y="69" w="115" h="53" measuredW="378" measuredH="175" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/infinity.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Canvas" x="44" y="371" w="78" h="67" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.1.1.1.2.1.1.full%26bm%3Bscreen.1.1.1.2.1.1.full.bmml%26bm%3Bscreen.1.1.1.2.1.1.full.bmml%26bm%3Bscreen.1.1.1.2.1.1.full.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%223%2C337%2C81%2C404%22%20href%3D%22screen.1.1.1.2.1.1.full.bmml%22%20alt%3D%22screen.1.1.1.2.1.1.full%22%20id%3D%2259%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Canvas" x="41" y="243" w="78" h="69" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.1.1.1.2.1.1.-%26bm%3Bscreen.1.1.1.2.1.1.-.bmml%26bm%3Bscreen.1.1.1.2.1.1.-.bmml%26bm%3Bscreen.1.1.1.2.1.1.-.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%220%2C209%2C78%2C278%22%20href%3D%22screen.1.1.1.2.1.1.-.bmml%22%20alt%3D%22screen.1.1.1.2.1.1.-%22%20id%3D%2263%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="89" controlTypeID="com.balsamiq.mockups::Component" x="55" y="252" w="63" h="292" measuredW="63" measuredH="292" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/screen_control_full.bmml#screen%20controls%20full</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
