@@ -1,0 +1,31 @@
+<mockup version="1.0" skin="sketch" measuredW="957" measuredH="755" mockupW="916" mockupH="721">
+  <controls>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="224" y="34" w="725" h="721" measuredW="725" measuredH="725" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/boundaries.1.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Canvas" x="41" y="371" w="79" h="67" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.1.1.1.1.1.1.-.full%26bm%3Bscreen.1.1.1.1.1.1.-.full.bmml%26bm%3Bscreen.1.1.1.1.1.1.-.full.bmml%26bm%3Bscreen.1.1.1.1.1.1.-.full.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%220%2C337%2C79%2C404%22%20href%3D%22screen.1.1.1.1.1.1.-.full.bmml%22%20alt%3D%22screen.1.1.1.1.1.1.-.full%22%20id%3D%2258%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Component" x="49" y="41" w="908" h="707" measuredW="908" measuredH="707" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/symbols_full_screen.bmml#rotations%20and%20boosts%20full%20screen</src>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Canvas" x="41" y="243" w="79" h="69" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.1.1.1.1.1.1.-%26bm%3Bscreen.1.1.1.1.1.1.-.bmml%26bm%3Bscreen.1.1.1.1.1.1.-.bmml%26bm%3Bscreen.1.1.1.1.1.1.-.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%220%2C209%2C79%2C278%22%20href%3D%22screen.1.1.1.1.1.1.-.bmml%22%20alt%3D%22screen.1.1.1.1.1.1.-%22%20id%3D%2261%22/%3E</map>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
