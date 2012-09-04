@@ -1,0 +1,127 @@
+<mockup version="1.0" skin="sketch" measuredW="608" measuredH="710" mockupW="376" mockupH="681">
+  <controls>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="264" y="163" w="312" h="303" measuredW="664" measuredH="666" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/animations.quaternions.3.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Canvas" x="266" y="320" w="39" h="34" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.3.1.1.2.1.1%26bm%3Bscreen.3.1.1.2.1.1.bmml%26bm%3Bscreen.3.1.1.2.1.1.bmml%26bm%3Bscreen.3.1.1.2.1.1.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2234%2C291%2C73%2C325%22%20href%3D%22screen.3.1.1.2.1.1.bmml%22%20alt%3D%22screen.3.1.1.2.1.1%22%20id%3D%2259%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Component" x="269" y="259" w="32" h="148" measuredW="32" measuredH="148" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="23" x="2" y="125" w="28" h="23"/>
+        <override controlID="21" x="0" y="0" w="32" h="29"/>
+        <override controlID="22" x="0" y="69" w="32" h="18"/>
+        <src>./assets/screen_control.bmml#screen%20controls</src>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::Canvas" x="264" y="255" w="39" h="35" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>screen.3.1.1.2.1.1.-.full%26bm%3Bscreen.3.1.1.2.1.1.-.full.bmml%26bm%3Bscreen.3.1.1.2.1.1.-.full.bmml%26bm%3Bscreen.3.1.1.2.1.1.-.full.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2232%2C226%2C71%2C261%22%20href%3D%22screen.3.1.1.2.1.1.-.full.bmml%22%20alt%3D%22screen.3.1.1.2.1.1.-.full%22%20id%3D%2263%22/%3E</map>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::Component" x="232" y="29" w="376" h="681" measuredW="376" measuredH="681" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="376" h="681"/>
+        <override controlID="1" x="35" y="108" w="304" h="464"/>
+        <override controlID="2" x="41" y="147" w="288" h="81"/>
+        <override controlID="3" x="59" y="344" w="71" h="45"/>
+        <override controlID="4" x="59" y="427" w="73" h="45"/>
+        <override controlID="5" x="149" y="426" w="85" h="45"/>
+        <override controlID="6" x="256" y="428" w="49" h="45"/>
+        <override controlID="7" x="33" y="107" w="306" h="27"/>
+        <override controlID="8" x="135" y="511" w="105" h="61"/>
+        <override controlID="9" x="177" y="531" w="16" h="16"/>
+        <override controlID="0:6" x="244" y="625" w="83" h="27"/>
+        <override controlID="0:4" x="232" y="579" w="49" h="27"/>
+        <override controlID="0:3" x="41" y="625" w="83" h="27"/>
+        <override controlID="7:49" x="239" y="0" w="64" h="27"/>
+        <override controlID="7:52" x="211" y="3" w="16" h="16"/>
+        <override controlID="0:1" x="29" y="579" w="49" h="27"/>
+        <override controlID="2:11" x="15" y="21" w="36" h="36"/>
+        <override controlID="7:50" x="157" y="3" w="16" h="16"/>
+        <override controlID="7:51" x="184" y="3" w="16" h="16"/>
+        <override controlID="2:9" x="219" y="21" w="49" h="27"/>
+        <override controlID="2:8" x="0" y="0" w="288" h="81"/>
+        <override controlID="-1"/>
+        <override controlID="7:48" x="0" y="1" w="306" h="25"/>
+        <override controlID="0:2" x="92" y="582" w="57" h="27"/>
+        <override controlID="0:0" x="0" y="0" w="376" h="681"/>
+        <override controlID="2:10" x="57" y="21" w="149" h="27"/>
+        <override controlID="0:5" x="295" y="582" w="49" h="27"/>
+        <src>./assets/Android%20Controls.bmml#Droid%20Phone</src>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::List" x="263" y="195" w="313" h="409" measuredW="100" measuredH="365" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>%2Cphone_settings_3_animations%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%2Cphone_settings_screen_layout%26bm%3Bphone_settings_screen_layout.bmml%26bm%3Bphone_settings_screen_layout.bmml%26bm%3Bphone_settings_screen_layout.bmml%2Cphone_settings_3_animations%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%2Cphone_settings_default_1_number%26bm%3Bphone_settings_default_1_number.bmml%26bm%3Bphone_settings_default_1_number.bmml%26bm%3Bphone_settings_default_1_number.bmml%2Cphone_settings_default_2_parameter%26bm%3Bphone_settings_default_2_parameter.bmml%26bm%3Bphone_settings_default_2_parameter.bmml%26bm%3Bphone_settings_default_2_parameter.bmml%2Cphone_settings_default_3_field%26bm%3Bphone_settings_default_3_field.bmml%26bm%3Bphone_settings_default_3_field.bmml%26bm%3Bphone_settings_default_3_field.bmml%2Cphone_settings_default_4_boundary%26bm%3Bphone_settings_default_4_boundary.bmml%26bm%3Bphone_settings_default_4_boundary.bmml%26bm%3Bphone_settings_default_4_boundary.bmml%2Cphone_settings_default_5_symmetry%26bm%3Bphone_settings_default_5_symmetry.bmml%26bm%3Bphone_settings_default_5_symmetry.bmml%26bm%3Bphone_settings_default_5_symmetry.bmml%2Cphone_settings_default_6_3_animations%26bm%3Bphone_settings_default_6_3_animations.bmml%26bm%3Bphone_settings_default_6_3_animations.bmml%26bm%3Bphone_settings_default_6_3_animations.bmml%2Cphone_settings_default_rotations_and_boosts%26bm%3Bphone_settings_default_rotations_and_boosts.bmml%26bm%3Bphone_settings_default_rotations_and_boosts.bmml%26bm%3Bphone_settings_default_rotations_and_boosts.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C201%2C344%2C234%22%20href%3D%22phone_settings_3_animations.bmml%22%20alt%3D%22phone_settings_3_animations%22%20id%3D%22119_0%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C234%2C344%2C267%22%20href%3D%22phone_settings_screen_layout.bmml%22%20alt%3D%22phone_settings_screen_layout%22%20id%3D%22119_1%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C267%2C344%2C300%22%20href%3D%22phone_settings_3_animations.bmml%22%20alt%3D%22phone_settings_3_animations%22%20id%3D%22119_2%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C300%2C344%2C333%22%20href%3D%22phone_settings_default_1_number.bmml%22%20alt%3D%22phone_settings_default_1_number%22%20id%3D%22119_3%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C333%2C344%2C366%22%20href%3D%22phone_settings_default_2_parameter.bmml%22%20alt%3D%22phone_settings_default_2_parameter%22%20id%3D%22119_4%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C366%2C344%2C399%22%20href%3D%22phone_settings_default_3_field.bmml%22%20alt%3D%22phone_settings_default_3_field%22%20id%3D%22119_5%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C399%2C344%2C432%22%20href%3D%22phone_settings_default_4_boundary.bmml%22%20alt%3D%22phone_settings_default_4_boundary%22%20id%3D%22119_6%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C432%2C344%2C465%22%20href%3D%22phone_settings_default_5_symmetry.bmml%22%20alt%3D%22phone_settings_default_5_symmetry%22%20id%3D%22119_7%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C465%2C344%2C498%22%20href%3D%22phone_settings_default_6_3_animations.bmml%22%20alt%3D%22phone_settings_default_6_3_animations%22%20id%3D%22119_8%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2231%2C498%2C344%2C531%22%20href%3D%22phone_settings_default_rotations_and_boosts.bmml%22%20alt%3D%22phone_settings_default_rotations_and_boosts%22%20id%3D%22119_9%22/%3E%0A</map>
+        <rowHeight>33</rowHeight>
+        <selectedIndex>0</selectedIndex>
+        <size>18</size>
+        <text>Language%0ANumber%20of%20Particles%0AScreen%20Layout%0A3%20Animations%0ADefault%3A%20particles%0ADefault%3A%20parameters%0ADefault%3A%20field%0ADefault%3A%20boundary%0ADefault%3A%20symmetry%0ADefault%3A%203%20animations%0ADefault%3A%20rotations%20and%20boosts%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::Canvas" x="261" y="135" w="315" h="60" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>6710886</color>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Label" x="313" y="154" w="146" h="23" measuredW="53" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Settings</text>
+      </controlProperties>
+    </control>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::Icon" x="276" y="161" w="16" h="16" measuredW="16" measuredH="16" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>DownFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::Component" x="313" y="265" w="188" h="235" measuredW="188" measuredH="235" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="108" x="1" y="33" w="187" h="169">
+          <selectedIndex>1</selectedIndex>
+          <text>Arabic%0AEnglish%0AFrench%0AGerman%0AJapanese%0AManderin%0ARussian%0ASpanish</text>
+        </override>
+        <override controlID="109" x="155" y="101" w="26" h="26"/>
+        <override controlID="83" x="9" y="11" w="-1" h="-1"/>
+        <override controlID="84" x="31" y="8" w="-1" h="-1">
+          <text>Languages</text>
+        </override>
+        <override controlID="85" x="46" y="202" w="96" h="-1"/>
+        <override controlID="87" x="0" y="0" w="188" h="37"/>
+        <override controlID="88" x="0" y="198" w="188" h="37"/>
+        <override controlID="90" x="155" y="41" w="26" h="26"/>
+        <override controlID="91" x="155" y="71" w="26" h="26">
+          <text/>
+        </override>
+        <override controlID="93" x="155" y="131" w="26" h="26"/>
+        <override controlID="94" x="155" y="161" w="26" h="26"/>
+        <override controlID="109:0" x="0" y="0" w="26" h="26"/>
+        <override controlID="109:1" x="5" y="5" w="-1" h="-1"/>
+        <src>./assets/Android%20Controls.bmml#Radio%20Menu</src>
+      </controlProperties>
+    </control>
+    <control controlID="124" controlTypeID="com.balsamiq.mockups::Canvas" x="523" y="604" w="65" h="41" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <href>phone_settings_main%26bm%3Bphone_settings_main.bmml%26bm%3Bphone_settings_main.bmml%26bm%3Bphone_settings_main.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22291%2C575%2C356%2C616%22%20href%3D%22phone_settings_main.bmml%22%20alt%3D%22phone_settings_main%22%20id%3D%22124%22/%3E</map>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
