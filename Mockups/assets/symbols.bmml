@@ -230,7 +230,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="6" controlTypeID="__group__" x="60" y="374" w="720" h="707" measuredW="1063" measuredH="707" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="__group__" x="60" y="374" w="720" h="707" measuredW="720" measuredH="707" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <controlName>rotations%20and%20boosts</controlName>
       </controlProperties>
@@ -271,27 +271,27 @@
             <text/>
           </controlProperties>
         </control>
-        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="320" y="21" w="57" h="29" measuredW="46" measuredH="28" zOrder="6" locked="false" isInGroup="6">
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="320" y="21" w="57" h="29" measuredW="45" measuredH="28" zOrder="6" locked="false" isInGroup="6">
           <controlProperties>
             <size>20</size>
             <text>0.2c</text>
           </controlProperties>
         </control>
-        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="663" y="276" w="57" h="50" measuredW="28" measuredH="43" zOrder="7" locked="false" isInGroup="6">
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="663" y="276" w="57" h="50" measuredW="28" measuredH="41" zOrder="7" locked="false" isInGroup="6">
           <controlProperties>
             <size>20</size>
             <text>0.1c</text>
             <textOrientation>up</textOrientation>
           </controlProperties>
         </control>
-        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="606" y="0" w="57" h="50" measuredW="59" measuredH="41" zOrder="8" locked="false" isInGroup="6">
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="606" y="0" w="57" h="50" measuredW="57.47507622990213" measuredH="40.50451348142499" zOrder="8" locked="false" isInGroup="6">
           <controlProperties>
             <size>20</size>
             <text>0.01c</text>
             <textOrientation>slanted</textOrientation>
           </controlProperties>
         </control>
-        <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="78" y="17" w="57" h="29" measuredW="26" measuredH="28" zOrder="9" locked="false" isInGroup="6">
+        <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="78" y="17" w="57" h="29" measuredW="27" measuredH="28" zOrder="9" locked="false" isInGroup="6">
           <controlProperties>
             <size>20</size>
             <text>15</text>
@@ -367,6 +367,35 @@
         <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="8" y="245" w="55" h="46" measuredW="56" measuredH="113" zOrder="2" locked="false" isInGroup="7">
           <controlProperties>
             <src>./assets/questions.png</src>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="8" controlTypeID="__group__" x="60" y="20" w="315" h="469" measuredW="315" measuredH="469" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Settings%20List</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::List" x="0" y="60" w="313" h="409" measuredW="100" measuredH="379" zOrder="0" locked="false" isInGroup="8">
+          <controlProperties>
+            <hrefs>phone_settings_languages%26bm%3Bphone_settings_languages.bmml%26bm%3Bphone_settings_languages.bmml%26bm%3Bphone_settings_languages.bmml%2Cphone_settings_number%26bm%3Bphone_settings_number.bmml%26bm%3Bphone_settings_number.bmml%26bm%3Bphone_settings_number.bmml%2Cphone_settings_screen_layout%26bm%3Bphone_settings_screen_layout.bmml%26bm%3Bphone_settings_screen_layout.bmml%26bm%3Bphone_settings_screen_layout.bmml%2Cphone_settings_3_animations%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%26bm%3Bphone_settings_3_animations.bmml%2Cphone_settings_rotations%26bm%3Bphone_settings_rotations.bmml%26bm%3Bphone_settings_rotations.bmml%26bm%3Bphone_settings_rotations.bmml%2Cphone_settings_boosts%26bm%3Bphone_settings_boosts.bmml%26bm%3Bphone_settings_boosts.bmml%26bm%3Bphone_settings_boosts.bmml%2Cphone_settings_default_1_number%26bm%3Bphone_settings_default_1_number.bmml%26bm%3Bphone_settings_default_1_number.bmml%26bm%3Bphone_settings_default_1_number.bmml%2Cphone_settings_default_2_parameter%26bm%3Bphone_settings_default_2_parameter.bmml%26bm%3Bphone_settings_default_2_parameter.bmml%26bm%3Bphone_settings_default_2_parameter.bmml%2Cphone_settings_default_3_field%26bm%3Bphone_settings_default_3_field.bmml%26bm%3Bphone_settings_default_3_field.bmml%26bm%3Bphone_settings_default_3_field.bmml%2Cphone_settings_default_4_boundary%26bm%3Bphone_settings_default_4_boundary.bmml%26bm%3Bphone_settings_default_4_boundary.bmml%26bm%3Bphone_settings_default_4_boundary.bmml%2Cphone_settings_default_5_symmetry%26bm%3Bphone_settings_default_5_symmetry.bmml%26bm%3Bphone_settings_default_5_symmetry.bmml%26bm%3Bphone_settings_default_5_symmetry.bmml%2Cphone_settings_default_6_3_animations%26bm%3Bphone_settings_default_6_3_animations.bmml%26bm%3Bphone_settings_default_6_3_animations.bmml%26bm%3Bphone_settings_default_6_3_animations.bmml%2Cphone_settings_default_rotations_and_boosts%26bm%3Bphone_settings_default_rotations_and_boosts.bmml%26bm%3Bphone_settings_default_rotations_and_boosts.bmml%26bm%3Bphone_settings_default_rotations_and_boosts.bmml</hrefs>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C70%2C322%2C99%22%20href%3D%22phone_settings_languages.bmml%22%20alt%3D%22phone_settings_languages%22%20id%3D%220_0%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C99%2C322%2C128%22%20href%3D%22phone_settings_number.bmml%22%20alt%3D%22phone_settings_number%22%20id%3D%220_1%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C128%2C322%2C157%22%20href%3D%22phone_settings_screen_layout.bmml%22%20alt%3D%22phone_settings_screen_layout%22%20id%3D%220_2%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C157%2C322%2C186%22%20href%3D%22phone_settings_3_animations.bmml%22%20alt%3D%22phone_settings_3_animations%22%20id%3D%220_3%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C186%2C322%2C215%22%20href%3D%22phone_settings_rotations.bmml%22%20alt%3D%22phone_settings_rotations%22%20id%3D%220_4%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C215%2C322%2C244%22%20href%3D%22phone_settings_boosts.bmml%22%20alt%3D%22phone_settings_boosts%22%20id%3D%220_5%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C244%2C322%2C273%22%20href%3D%22phone_settings_default_1_number.bmml%22%20alt%3D%22phone_settings_default_1_number%22%20id%3D%220_6%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C273%2C322%2C302%22%20href%3D%22phone_settings_default_2_parameter.bmml%22%20alt%3D%22phone_settings_default_2_parameter%22%20id%3D%220_7%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C302%2C322%2C331%22%20href%3D%22phone_settings_default_3_field.bmml%22%20alt%3D%22phone_settings_default_3_field%22%20id%3D%220_8%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C331%2C322%2C360%22%20href%3D%22phone_settings_default_4_boundary.bmml%22%20alt%3D%22phone_settings_default_4_boundary%22%20id%3D%220_9%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C360%2C322%2C389%22%20href%3D%22phone_settings_default_5_symmetry.bmml%22%20alt%3D%22phone_settings_default_5_symmetry%22%20id%3D%220_10%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C389%2C322%2C418%22%20href%3D%22phone_settings_default_6_3_animations.bmml%22%20alt%3D%22phone_settings_default_6_3_animations%22%20id%3D%220_11%22/%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%229%2C418%2C322%2C447%22%20href%3D%22phone_settings_default_rotations_and_boosts.bmml%22%20alt%3D%22phone_settings_default_rotations_and_boosts%22%20id%3D%220_12%22/%3E%0A</map>
+            <rowHeight>29</rowHeight>
+            <size>14</size>
+            <text>Language%0ANumber%20of%20Particles%0AScreen%20Layout%0A3%20Animations%0ARotations%0ABoosts%0ADefault%3A%20Particles%0ADefault%3A%20Parameters%0ADefault%3A%20Field%0ADefault%3A%20Boundary%0ADefault%3A%20Symmetry%0ADefault%3A%203%20Animations%0ADefault%3A%20Rotations%20and%20Boosts%20%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="315" h="60" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="8">
+          <controlProperties>
+            <borderStyle>none</borderStyle>
+            <color>6710886</color>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="11" y="16" w="-1" h="-1" measuredW="79" measuredH="28" zOrder="2" locked="false" isInGroup="8">
+          <controlProperties>
+            <color>14540253</color>
+            <size>20</size>
+            <text>Settings</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>

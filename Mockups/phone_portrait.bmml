@@ -33,6 +33,7 @@
     </control>
     <control controlID="88" controlTypeID="com.balsamiq.mockups::Component" x="232" y="25" w="376" h="681" measuredW="376" measuredH="681" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2263%2C429%2C118%2C464%22%20href%3D%22phone_menus.bmml%22%20alt%3D%22phone_menus%22%20id%3D%2210%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%2263%2C429%2C118%2C464%22%20href%3D%22phone_menus.bmml%22%20alt%3D%22phone_menus%22%20id%3D%2210%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22185%2C429%2C240%2C464%22%20href%3D%22phone_menus.bmml%22%20alt%3D%22phone_menus%22%20id%3D%2210%22/%3E</map>
         <override controlID="0" x="0" y="0" w="376" h="681"/>
         <override controlID="1" x="35" y="108" w="304" h="464"/>
         <override controlID="2" x="41" y="147" w="288" h="81"/>
@@ -43,22 +44,22 @@
         <override controlID="7" x="33" y="107" w="306" h="27"/>
         <override controlID="8" x="135" y="511" w="105" h="61"/>
         <override controlID="9" x="177" y="531" w="16" h="16"/>
-        <override controlID="0:0" x="0" y="0" w="376" h="681"/>
-        <override controlID="0:1" x="29" y="579" w="49" h="27"/>
-        <override controlID="7:51" x="184" y="3" w="16" h="16"/>
-        <override controlID="0:3" x="41" y="625" w="83" h="27"/>
-        <override controlID="2:11" x="15" y="21" w="36" h="36"/>
         <override controlID="7:50" x="157" y="3" w="16" h="16"/>
-        <override controlID="2:8" x="0" y="0" w="288" h="81"/>
-        <override controlID="2:10" x="57" y="21" w="149" h="27"/>
-        <override controlID="2:9" x="219" y="21" w="49" h="27"/>
+        <override controlID="-1"/>
+        <override controlID="0:1" x="29" y="579" w="49" h="27"/>
         <override controlID="7:48" x="0" y="1" w="306" h="25"/>
+        <override controlID="2:8" x="0" y="0" w="288" h="81"/>
+        <override controlID="7:51" x="184" y="3" w="16" h="16"/>
+        <override controlID="0:2" x="92" y="582" w="57" h="27"/>
+        <override controlID="7:49" x="239" y="0" w="64" h="27"/>
+        <override controlID="0:3" x="41" y="625" w="83" h="27"/>
+        <override controlID="0:0" x="0" y="0" w="376" h="681"/>
         <override controlID="0:4" x="232" y="579" w="49" h="27"/>
         <override controlID="0:6" x="244" y="625" w="83" h="27"/>
-        <override controlID="0:2" x="92" y="582" w="57" h="27"/>
-        <override controlID="-1"/>
+        <override controlID="2:10" x="57" y="21" w="149" h="27"/>
+        <override controlID="2:9" x="219" y="21" w="49" h="27"/>
         <override controlID="0:5" x="295" y="582" w="49" h="27"/>
-        <override controlID="7:49" x="239" y="0" w="64" h="27"/>
+        <override controlID="2:11" x="15" y="21" w="36" h="36"/>
         <override controlID="7:52" x="211" y="3" w="16" h="16"/>
         <src>./assets/Android%20Controls.bmml#Droid%20Phone</src>
       </controlProperties>
