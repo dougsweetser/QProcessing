@@ -9,3 +9,12 @@ repositories {
 dependencies {
         testCompile 'junit:junit:4.8.2'
 }
+
+task tarForDevRelease(type: Tar) {
+    from '.'
+    exclude 'build'
+    exclude 'Archive'
+    exclude '.gradle'
+    exclude '*swp'
+    compression = Compression.GZIP
+}
