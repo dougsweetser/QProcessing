@@ -14,9 +14,10 @@
  */
 // Syntax help: http://en.wikipedia.org/wiki/Java_syntax
 
+// Package and imports.
 package org.visualphysics;
 
-// Imports
+import org.visualphysics.Settings;
 
 /** One line description for Javadoc
  *  @author doug  sweetser@alum.mit.edu
@@ -39,12 +40,9 @@ public class Template {
     }
 
     // Public methods
-    public int getValue() {
-        return this.value;
-    }
-
+    // Note: store data in Settings for centralization.
     public void setValue(int value) {
-        this.value = value; 
+        Settings.testValue = value; 
     }
 
     // Private methods
