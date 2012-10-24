@@ -7,12 +7,12 @@ class GBY:
     def __init__(self, birth_year):
         self.birth_year = birth_year
 
-    def calculate_golden_birthday_year(self, birth_year):
-        birth_digits = birth_year[2:]
-        return str(self.num(birth_year) + self.num(birth_digits))
+    def calculate_golden_birthday_year(self):
+        birth_digits = self.birth_year[2:]
+        return str(self.num(self.birth_year) + self.num(birth_digits))
 
     def print_golden_birthday_year(self, pprint):
-        gby = self.calculate_golden_birthday_year(self.birth_year)
+        gby = self.calculate_golden_birthday_year()
         if pprint:
             output = "Since your birth year is " + self.birth_year + ", your golden birthday is " + gby
         else:
