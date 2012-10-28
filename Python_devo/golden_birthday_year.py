@@ -8,14 +8,14 @@ class GoldenBirthdayYear:
         self.birth_year = birth_year
 
     def calculate_golden_birthday_year(self):
-        birth_digits = self.birth_year[2:]
-        golden_year_int = int(self.birth_year) + int(birth_digits)
-        return str(golden_year_int)
+        birth_digits = self.birth_year % 100
+        golden_year_int = self.birth_year + birth_digits
+        return golden_year_int
 
     def print_golden_birthday_year(self, pprint):
         gby = self.calculate_golden_birthday_year()
         if pprint:
-            output = "Since your birth year is " + self.birth_year + ", your golden birthday is " + gby
+            output = "Since your birth year is " + str(self.birth_year) + ", your golden birthday is " + str(gby)
         else:
             output = gby
         print(output)
@@ -29,6 +29,6 @@ if __name__ == '__main__':
     birthdays = args_stuff[1]
     
     for birthday in birthdays:
-        gby = GoldenBirthdayYear(birthday)
+        gby = GoldenBirthdayYear(int(birthday))
         gby.print_golden_birthday_year(args.pprint)
 
