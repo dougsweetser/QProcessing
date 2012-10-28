@@ -4,7 +4,7 @@
 
 package org.visualphysics;
 
-import org.visualphysics.Settings;
+import com.beust.jcommander.JCommander;
 
 /** Description for Javadoc
  *  @author doug  sweetser@alum.mit.edu
@@ -35,4 +35,14 @@ public class GoldenBirthdayYear {
         System.out.println(output);
         return output;
     }
+
+    public static void main(String[] args) {
+        GoldenBirthdayYearArgs params = new GoldenBirthdayYearArgs();
+        JCommander cmd = new JCommander(params, args);
+
+        GoldenBirthdayYear gby = new GoldenBirthdayYear("2008");
+        gby.print_golden_birthday_year(params.pprint);
+    }
 }
+
+

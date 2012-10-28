@@ -7,7 +7,17 @@ repositories {
 }
 
 dependencies {
+        compile 'com.beust:jcommander:1.27'
+        runtime 'com.beust:jcommander:1.27'
         testCompile 'junit:junit:4.8.2'
+}
+
+task (runGoldenBirthdayYear, dependsOn: classes, type: JavaExec) {
+    main = 'org.visualphysics.GoldenBirthdayYear'
+    classpath= sourceSets.main.runtimeClasspath
+    println "classpath: " + classpath
+    standardInput= System.in
+
 }
 
 task tarForDevRelease(type: Tar) {
