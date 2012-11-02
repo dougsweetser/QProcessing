@@ -15,9 +15,13 @@ dependencies {
 task (runGoldenBirthdayYear, dependsOn: classes, type: JavaExec) {
     main = 'org.visualphysics.GoldenBirthdayYear'
     classpath= sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
     println "classpath: " + classpath
     standardInput= System.in
-
+    for (arg in allJvmArgs){
+        println "Arg: " + arg;
+    }
+    println "cmdline: " + commandLine;
 }
 
 task tarForDevRelease(type: Tar) {
