@@ -13,26 +13,27 @@ import java.util.List;
  */
 public class GoldenBirthdayYear {
 
-    String birthyear;
+    int birthyear;
 
-    public GoldenBirthdayYear(String by) {
-        birthyear = by;
+    public GoldenBirthdayYear(int by) {
+        this.birthyear = by;
     }
 
-    public String calculate_golden_birthday_year() {
-        String birth_digits = this.birthyear.substring(2);
-        int golden_year_int = Integer.valueOf(birth_digits) + Integer.valueOf(this.birthyear);
-        return Integer.toString(golden_year_int);
+    public int calculate_golden_birthday_year() {
+        int birth_digits = this.birthyear % 100;
+        int golden_birthyear = birth_digits + this.birthyear;
+        return golden_birthyear;
     }
 
     public String print_golden_birthday_year(boolean pprint){
-        String gby = this.calculate_golden_birthday_year();
+        int gby = this.calculate_golden_birthday_year();
+        String gbys = Integer.toString(gby);
         String output;
         if(pprint) {
-            output = "Since your birth year is " + this.birthyear + ", your golden birthday is " + gby;
+            output = "Since your birth year is " + this.birthyear + ", your golden birthday is " + gbys;
         }
         else {
-            output = gby;
+            output = gbys;
         }
         System.out.println(output);
         return output;

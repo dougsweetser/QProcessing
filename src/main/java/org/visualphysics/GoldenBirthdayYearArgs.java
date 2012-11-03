@@ -13,5 +13,5 @@ public class GoldenBirthdayYearArgs{
     public boolean help = false;
 
     @Parameter()
-    public List<String> argv = new ArrayList<String>();
+    public List<Integer> argv = new ArrayList<Integer>();
 }
