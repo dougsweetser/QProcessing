@@ -16,12 +16,10 @@ task (runGoldenBirthdayYear, dependsOn: classes, type: JavaExec) {
     main = 'org.visualphysics.GoldenBirthdayYear'
     classpath= sourceSets.main.runtimeClasspath
     classpath configurations.runtime
-    println "classpath: " + classpath
-    standardInput= System.in
-    for (arg in allJvmArgs){
-        println "Arg: " + arg;
-    }
-    println "cmdline: " + commandLine;
+    cmd = (commandLine =~ /[\[\],]/).replaceAll(" ")
+    sh = "#!/bin/bash\n" + cmd + " \$@"
+    File shFile = file('bin/GoldenBirthdayYear.java.sh')
+    shFile.write(sh)
 }
 
 task tarForDevRelease(type: Tar) {
