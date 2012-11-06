@@ -1,11 +1,8 @@
 package org.visualphysics;
 
-import  org.visualphysics.GoldenBirthdayYear;
-
-import  org.junit.Before;
 import  org.junit.Test;
-import  org.junit.After;
-import  static org.junit.Assert.*;
+import  static org.junit.Assert.assertEquals;
+import  org.visualphysics.GoldenBirthdayYear;
 
 public class GoldenBirthdayYearTest {
 
