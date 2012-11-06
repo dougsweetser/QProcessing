@@ -12,14 +12,14 @@ dependencies {
         testCompile 'junit:junit:4.8.2'
 }
 
-task (runGoldenBirthdayYear, dependsOn: classes, type: JavaExec) {
+task (makeGoldenBirthdayYearShell, dependsOn: classes, type: JavaExec) {
     main = 'org.visualphysics.GoldenBirthdayYear'
     classpath= sourceSets.main.runtimeClasspath
     classpath configurations.runtime
-    cmd = (commandLine =~ /[\[\],]/).replaceAll(" ")
-    sh = "#!/bin/bash\n" + cmd + " \$@"
+    this.set("cmd", (commandLine =~ /[\[\],]/).replaceAll(" "))
+    this.set("shCmd", "#!/bin/bash\n" + this.get("cmd") + " \$@")
     File shFile = file('bin/GoldenBirthdayYear.java.sh')
-    shFile.write(sh)
+    shFile.write(this.get("shCmd"))
 }
 
 task tarForDevRelease(type: Tar) {
