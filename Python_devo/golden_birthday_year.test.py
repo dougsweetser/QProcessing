@@ -1,4 +1,4 @@
-#!/usr/local/bin/env python3
+#!/usr/bin/env python3
 
 import unittest
 import golden_birthday_year
@@ -14,7 +14,7 @@ class GoldenBirthdayYear(unittest.TestCase):
 
     def test_print_golden_birthday_year(self):
         the_year = 2008
-        the_gby  = 2016
+        the_gby  = "2016"
         pprint = False
         gby = golden_birthday_year.GoldenBirthdayYear(the_year)
         gby_year = gby.print_golden_birthday_year(pprint)

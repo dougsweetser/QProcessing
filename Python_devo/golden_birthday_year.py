@@ -9,15 +9,15 @@ class GoldenBirthdayYear:
 
     def calculate_golden_birthday_year(self):
         birth_digits = self.birth_year % 100
-        golden_year_int = self.birth_year + birth_digits
-        return golden_year_int
+        golden_year = birth_digits + self.birth_year
+        return golden_year
 
     def print_golden_birthday_year(self, pprint):
         gby = self.calculate_golden_birthday_year()
         if pprint:
             output = "Since your birth year is " + str(self.birth_year) + ", your golden birthday is " + str(gby)
         else:
-            output = gby
+            output = str(gby)
         print(output)
         return output
 
