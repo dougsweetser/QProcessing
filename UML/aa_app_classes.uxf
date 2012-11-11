@@ -1,292 +1,695 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="11.5.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>60</x>
-      <y>360</y>
-      <w>100</w>
-      <h>30</h>
+      <x>0</x>
+      <y>315</y>
+      <w>182</w>
+      <h>35</h>
     </coordinates>
-    <panel_attributes>Boundaries</panel_attributes>
+    <panel_attributes>Boundaries
+--
+# void setBoundaries(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>50</x>
-      <y>70</y>
-      <w>100</w>
-      <h>30</h>
+      <x>0</x>
+      <y>0</y>
+      <w>133</w>
+      <h>35</h>
     </coordinates>
-    <panel_attributes>Particles</panel_attributes>
+    <panel_attributes>Particles
+--
+# void setParticles(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>60</x>
-      <y>130</y>
-      <w>100</w>
-      <h>30</h>
+      <x>0</x>
+      <y>63</y>
+      <w>133</w>
+      <h>35</h>
     </coordinates>
-    <panel_attributes>Parameters</panel_attributes>
+    <panel_attributes>Parameters
+--
+# void setParameters(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>60</x>
-      <y>210</y>
-      <w>100</w>
-      <h>20</h>
+      <x>0</x>
+      <y>119</y>
+      <w>112</w>
+      <h>28</h>
     </coordinates>
-    <panel_attributes>/Fields/</panel_attributes>
+    <panel_attributes>Fields
+--
+# void setFields(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>240</y>
-      <w>100</w>
-      <h>30</h>
+      <x>14</x>
+      <y>175</y>
+      <w>70</w>
+      <h>21</h>
     </coordinates>
-    <panel_attributes>Classical</panel_attributes>
+    <panel_attributes>Classical
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>280</y>
-      <w>100</w>
-      <h>30</h>
+      <x>14</x>
+      <y>224</y>
+      <w>77</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>QM
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>273</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>QFT
+--
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>320</y>
-      <w>100</w>
-      <h>20</h>
+      <x>21</x>
+      <y>413</y>
+      <w>147</w>
+      <h>35</h>
     </coordinates>
-    <panel_attributes>QFT</panel_attributes>
+    <panel_attributes>Periodic
+--
+# void setPeriod(int iSeconds)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>400</y>
-      <w>100</w>
-      <h>30</h>
+      <x>21</x>
+      <y>462</y>
+      <w>161</w>
+      <h>42</h>
     </coordinates>
-    <panel_attributes>Periodic</panel_attributes>
+    <panel_attributes>Spatial
+--
+# boolean outOfBounds(Q8 v)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>90</x>
-      <y>440</y>
-      <w>100</w>
-      <h>30</h>
+      <x>0</x>
+      <y>518</y>
+      <w>133</w>
+      <h>35</h>
     </coordinates>
-    <panel_attributes>Spatial</panel_attributes>
+    <panel_attributes>Views
+--
+# void setViews(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>60</x>
-      <y>500</y>
-      <w>100</w>
-      <h>30</h>
+      <x>14</x>
+      <y>567</y>
+      <w>98</w>
+      <h>21</h>
     </coordinates>
-    <panel_attributes>Views</panel_attributes>
+    <panel_attributes>OneAnimation
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>80</x>
-      <y>540</y>
+      <x>14</x>
+      <y>602</y>
+      <w>105</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>ThreeAnimations
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>14</x>
+      <y>637</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>ComplexPlanes
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>168</x>
+      <y>0</y>
+      <w>154</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Language
+--
+# void setLanguage(String s)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>357</x>
+      <y>455</y>
+      <w>196</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Rotations
+--
+# void setStepSize(int i)
+# void setModeContinuous(bool b)
+# void setModeDiscrete(bool b)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>357</x>
+      <y>532</y>
       <w>140</w>
-      <h>30</h>
+      <h>42</h>
     </coordinates>
-    <panel_attributes>OneAnimation</panel_attributes>
+    <panel_attributes>Boosts
+--
+# void boostUp(String x)
+# void boostDown(String x)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>80</x>
-      <y>580</y>
-      <w>140</w>
-      <h>30</h>
+      <x>413</x>
+      <y>392</y>
+      <w>70</w>
+      <h>21</h>
     </coordinates>
-    <panel_attributes>ThreeAnimations</panel_attributes>
+    <panel_attributes>Color
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>80</x>
-      <y>620</y>
-      <w>140</w>
-      <h>30</h>
+      <x>357</x>
+      <y>0</y>
+      <w>175</w>
+      <h>182</h>
     </coordinates>
-    <panel_attributes>ComplexPlanes</panel_attributes>
+    <panel_attributes>Settings
+--
+-int particles
+-int parameters
+-int fields
+-int boundaries
+-int period
+-int views
+-int language
+-boot menus
+-bool fullScreen
+-bool Landscape
+-bool rotationModeDiscrete
+-bool rotationModeContinuous
+-color text
+# void printSettings()
+# void saveSettings()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>300</x>
-      <y>50</y>
-      <w>100</w>
-      <h>30</h>
+      <x>231</x>
+      <y>294</y>
+      <w>161</w>
+      <h>105</h>
     </coordinates>
-    <panel_attributes>Language</panel_attributes>
+    <panel_attributes>Q8
+--
+# Q8 add(Q8 v, Q8 w)
+# Q8 subtract(Q8 v, Q8 w)
+# Q8 timeReflection(Q8 v)
+# Q8 spaceReflection(Q8 v)
+# Q8 rotation(Q8 v, int d)
+# Q8 boost(Q8 v, float b, String x)
+# Q8 gamma(Q8 v, 1..15)
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>300</x>
-      <y>130</y>
-      <w>100</w>
-      <h>30</h>
+      <x>231</x>
+      <y>476</y>
+      <w>105</w>
+      <h>21</h>
     </coordinates>
-    <panel_attributes>Layout</panel_attributes>
+    <panel_attributes>Spacetime
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>320</x>
-      <y>170</y>
-      <w>100</w>
-      <h>30</h>
+      <x>245</x>
+      <y>518</y>
+      <w>70</w>
+      <h>21</h>
     </coordinates>
-    <panel_attributes>Menus</panel_attributes>
+    <panel_attributes>Positions
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>320</x>
-      <y>210</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>FullScreen</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>300</x>
-      <y>270</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Rotations</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>300</x>
-      <y>320</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Boosts</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>300</x>
-      <y>360</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Color</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>300</x>
-      <y>430</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Settings</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>300</x>
-      <y>490</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Q8</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>430</x>
-      <y>170</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Sizes</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>310</x>
-      <y>550</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Spacetime</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>330</x>
-      <y>590</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>Positions</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>330</x>
-      <y>630</y>
-      <w>100</w>
-      <h>30</h>
+      <x>245</x>
+      <y>560</y>
+      <w>84</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>Motion
+--
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>21</x>
+      <y>364</y>
+      <w>133</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>OneTime
+--
+# void restart(bool b)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>63</x>
+      <y>126</y>
+      <w>34</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>70</x>
+      <y>126</y>
+      <w>34</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>77</x>
+      <y>126</y>
+      <w>34</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;147</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>91</x>
+      <y>532</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>98</x>
+      <y>532</y>
+      <w>49</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+.
+.
+.
+1..1</panel_attributes>
+    <additional_attributes>28;21;28;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>287</x>
+      <y>476</y>
+      <w>49</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+1..n
+</panel_attributes>
+    <additional_attributes>28;21;28;49</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>301</x>
+      <y>476</y>
+      <w>49</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+.
+.
+1..n</panel_attributes>
+    <additional_attributes>28;21;28;105</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>154</x>
+      <y>329</y>
+      <w>49</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+.
+.
+.
+1..1</panel_attributes>
+    <additional_attributes>28;21;28;147</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>875</x>
+      <y>343</y>
+      <w>49</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+.
+1..1</panel_attributes>
+    <additional_attributes>77;-84;77;-84</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>168</x>
+      <y>119</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>org.processing.*
+--
+# void setup()
+# void draw()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>413</x>
+      <y>336</y>
+      <w>133</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>RotationAndBoostControls
+--
+# void showControls()
+# void hideControls()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>798</x>
+      <y>161</y>
+      <w>154</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Frame extends Layout
+implements NamedSizes
+--
+Size frameGroundHeight
+Size frameHeight
+Size frameSkyHeight
+Size frameWidth
+--
+# Size[] setSizes()
+# String printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>546</x>
+      <y>112</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>interface NamedPoints
+--
+# Point[] setPoints()
+# String  printPoints()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>560</x>
+      <y>161</y>
+      <w>189</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Boosts extents Layout
+implements NamedPoints, Named Sizes
+--
+Point boostX
+Point boostY
+Point boostZ
+Point boostBetaX
+Point boostBetaY
+Point boostBetaZ
+Size  rotationArrowLength
+--
+# Point[] calculatePoints()
+# Size[]  calculateSizes()
+# String  printPoints()
+# String  printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>560</x>
+      <y>413</y>
+      <w>196</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>show extends Layout
+implements NamedPoints, NamedLength
+--
+String FullStreen
+Point showFullScreen
+Point showMenu
+Size  controlLength
+--
+# Point[] setPoints()
+# Size[]  setSizes()
+# String   printPoints()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>560</x>
+      <y>322</y>
+      <w>196</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Home extends Layout
+implements NamedPoints, NamedSizes
+--
+Point home
+Size  homeLength
+--
+# Point[] calculatePoints()
+# Size[]  calculateSizes()
+# String  printPoints()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>560</x>
+      <y>546</y>
+      <w>168</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Rotations extends Layout
+implements NamedPoints, NamedSizes
+--
+Point rotationDegreesXY
+Point rotationDegreesXZ
+Point rotationDegreesYZ
+Point rotationXwY
+Point rotationXwZ
+Point rotationYwX
+Point rotationYwZ
+Point rotationZwX
+Point rotationZwY
+Size  rotationArrowLength
+--
+# Point[] setPoints()
+# Size[]  setNamedSizes()
+# String  printPoints()
+# String  printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>784</x>
+      <y>112</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>interface NamedSizes
+--
+# Size[]  setSizes()
+# String  printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>798</x>
+      <y>266</y>
+      <w>126</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Gutter extends Layout
+implements NamedSizes
+--
+Size gutterBottom
+Size gutterCenter
+Size gutterLeft
+Size gutterRight
+Size gutterTop
+--
+# Size[] setSizes()
+# String printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>798</x>
+      <y>385</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Menu extends Layout 
+implements Sizes
+--
+Size menuActiveHeight
+Size menuActiveWidth
+Size menuFrameHeight
+Size menuFrameWidth
+Size menusHeight
+Size menusWidth
+--
+# Size[] setSizes()
+# String printSizes()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>546</x>
+      <y>0</y>
+      <w>406</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Layout
+implements NamedPoints, NamedSizes
+--
+int    appHeight
+int    appWidth
+String Orientation
+--
+Point[] setPoints()
+Size[]  setSizes()
+String  printPoints()
+String  printSizes()
+String  setOreintation(String [L,P])</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>777</x>
+      <y>532</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Point
+--
+int x
+int y</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>777</x>
+      <y>595</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Size
+--
+int s</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
