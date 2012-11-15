@@ -463,20 +463,17 @@
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>798</x>
-      <y>161</y>
+      <y>182</y>
       <w>154</w>
-      <h>98</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>Frame extends Layout
-implements NamedSizes
+implements NameSize
 --
-Size frameGroundHeight
-Size frameHeight
-Size frameSkyHeight
-Size frameWidth
---
-# Size[] setSizes()
-# String printSizes()</panel_attributes>
+Size frame_ground_height
+Size frame_height
+Size frame_sky_height
+Size frame_width</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -485,37 +482,32 @@ Size frameWidth
       <x>546</x>
       <y>112</y>
       <w>168</w>
-      <h>42</h>
+      <h>49</h>
     </coordinates>
-    <panel_attributes>interface NamedPoints
+    <panel_attributes>interface NameGrid
 --
-# Point[] setPoints()
-# String  printPoints()</panel_attributes>
+# Grid[] set_grid()
+# Grid{} grid_group()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>560</x>
-      <y>161</y>
+      <y>189</y>
       <w>189</w>
-      <h>154</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>Boosts extents Layout
-implements NamedPoints, Named Sizes
+implements NameGrid, NameSize
 --
-Point boostX
-Point boostY
-Point boostZ
-Point boostBetaX
-Point boostBetaY
-Point boostBetaZ
-Size  rotationArrowLength
---
-# Point[] calculatePoints()
-# Size[]  calculateSizes()
-# String  printPoints()
-# String  printSizes()</panel_attributes>
+Grid boost_x
+Grid boost_y
+Grid boost_z
+Grid boost_beta_x
+Grid boost_beta_y
+Grid boost_beta_z
+Size rotation_arrow_length</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -524,19 +516,15 @@ Size  rotationArrowLength
       <x>560</x>
       <y>413</y>
       <w>196</w>
-      <h>126</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>show extends Layout
-implements NamedPoints, NamedLength
+implements NameGrid, NameSize
 --
-String FullStreen
-Point showFullScreen
-Point showMenu
-Size  controlLength
---
-# Point[] setPoints()
-# Size[]  setSizes()
-# String   printPoints()</panel_attributes>
+Grid   show_full_screen
+Grid   show_menu
+Size   control_length
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -545,17 +533,13 @@ Size  controlLength
       <x>560</x>
       <y>322</y>
       <w>196</w>
-      <h>84</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>Home extends Layout
-implements NamedPoints, NamedSizes
+implements NameGrid, NameSize
 --
-Point home
-Size  homeLength
---
-# Point[] calculatePoints()
-# Size[]  calculateSizes()
-# String  printPoints()</panel_attributes>
+Grid home
+Size home_length</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -564,26 +548,22 @@ Size  homeLength
       <x>560</x>
       <y>546</y>
       <w>168</w>
-      <h>182</h>
+      <h>147</h>
     </coordinates>
     <panel_attributes>Rotations extends Layout
-implements NamedPoints, NamedSizes
+implements NameGrid, NameSize
 --
-Point rotationDegreesXY
-Point rotationDegreesXZ
-Point rotationDegreesYZ
-Point rotationXwY
-Point rotationXwZ
-Point rotationYwX
-Point rotationYwZ
-Point rotationZwX
-Point rotationZwY
-Size  rotationArrowLength
---
-# Point[] setPoints()
-# Size[]  setNamedSizes()
-# String  printPoints()
-# String  printSizes()</panel_attributes>
+Grid rotation_degrees_x_y
+Grid rotation_degrees_x_z
+Grid rotation_degrees_y_z
+Grid rotation_x_y
+Grid rotation_x_z
+Grid rotation_y_x
+Grid rotation_y_z
+Grid rotation_z_x
+Grid rotation_z_y
+Size rotation_arrow_length
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -594,10 +574,10 @@ Size  rotationArrowLength
       <w>168</w>
       <h>42</h>
     </coordinates>
-    <panel_attributes>interface NamedSizes
+    <panel_attributes>interface NameSize
 --
-# Size[]  setSizes()
-# String  printSizes()</panel_attributes>
+# Size[] set_size()
+# Size{} size_group()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -606,19 +586,17 @@ Size  rotationArrowLength
       <x>798</x>
       <y>266</y>
       <w>126</w>
-      <h>112</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Gutter extends Layout
 implements NamedSizes
 --
-Size gutterBottom
-Size gutterCenter
-Size gutterLeft
-Size gutterRight
-Size gutterTop
---
-# Size[] setSizes()
-# String printSizes()</panel_attributes>
+Size gutter_bottom
+Size gutter_center
+Size gutter_left
+Size gutter_right
+Size gutter_top
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -627,20 +605,17 @@ Size gutterTop
       <x>798</x>
       <y>385</y>
       <w>147</w>
-      <h>133</h>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Menu extends Layout 
-implements Sizes
+implements NamedSize
 --
-Size menuActiveHeight
-Size menuActiveWidth
-Size menuFrameHeight
-Size menuFrameWidth
-Size menusHeight
-Size menusWidth
---
-# Size[] setSizes()
-# String printSizes()</panel_attributes>
+Size menu_active_height
+Size menu_active_width
+Size menu_frame_height
+Size menu_frame_width
+Size menus_height
+Size menus_width</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -652,17 +627,12 @@ Size menusWidth
       <h>105</h>
     </coordinates>
     <panel_attributes>Layout
-implements NamedPoints, NamedSizes
+implements NameGrid, NameSize
 --
-int    appHeight
-int    appWidth
-String Orientation
---
-Point[] setPoints()
-Size[]  setSizes()
-String  printPoints()
-String  printSizes()
-String  setOreintation(String [L,P])</panel_attributes>
+int    app_height
+int    app_width
+String orientation
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -673,7 +643,7 @@ String  setOreintation(String [L,P])</panel_attributes>
       <w>84</w>
       <h>42</h>
     </coordinates>
-    <panel_attributes>Point
+    <panel_attributes>Grid
 --
 int x
 int y</panel_attributes>

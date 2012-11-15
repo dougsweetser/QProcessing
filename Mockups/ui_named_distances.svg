@@ -382,7 +382,7 @@
          id="tspan33471"
          x="276.76318"
          y="355.82394"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold">AA App Named Distances</tspan></text>
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold">AA App Named Sizes, Grid Points</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
@@ -22354,7 +22354,7 @@
          y="706.59558"
          x="789.4201"
          id="tspan14149"
-         sodipodi:role="line">gutterBottom</tspan></text>
+         sodipodi:role="line">gutter_bottom</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 762,697.36218 0,8.34315"
@@ -22372,7 +22372,7 @@
          sodipodi:role="line"
          id="tspan14155"
          x="789.74756"
-         y="416.59558">gutterTop</tspan></text>
+         y="416.59558">gutter_top</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22390,7 +22390,7 @@
          sodipodi:role="line"
          id="tspan14161"
          x="753.38849"
-         y="734.55493">gutterRight</tspan></text>
+         y="734.55493">gutter_right</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22408,7 +22408,7 @@
          y="734.20264"
          x="441.38855"
          id="tspan14167"
-         sodipodi:role="line">gutterCenter</tspan></text>
+         sodipodi:role="line">gutter_center</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 577.12132,729.53375 -23.02082,0"
@@ -22426,7 +22426,7 @@
          sodipodi:role="line"
          id="tspan14173"
          x="155.38852"
-         y="733.8797">gutterLeft</tspan></text>
+         y="733.8797">gutter_left</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22444,7 +22444,7 @@
          y="772.34039"
          x="563.34558"
          id="tspan14179"
-         sodipodi:role="line">frameWidth</tspan></text>
+         sodipodi:role="line">frame_width</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 551.9224,767.53375 -280.8219,0"
@@ -22468,7 +22468,7 @@
          sodipodi:role="line"
          id="tspan14191"
          x="97.56916"
-         y="573.81421">frameHeight</tspan></text>
+         y="573.81421">frame_height</tspan></text>
     <g
        id="g14273"
        transform="translate(102,-290)">
@@ -22504,7 +22504,7 @@
          sodipodi:role="line"
          id="tspan14281"
          x="723.35657"
-         y="756.52161">menusWidth</tspan></text>
+         y="756.52161">menus_width</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22522,7 +22522,7 @@
          y="562.59161"
          x="785.57562"
          id="tspan14287"
-         sodipodi:role="line">menusHeight</tspan></text>
+         sodipodi:role="line">menus_height</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 780.67945,696.66905 0,-277.99347"
@@ -22540,7 +22540,7 @@
          y="386.52332"
          x="725.78143"
          id="tspan14293"
-         sodipodi:role="line">menuActiveWidth</tspan></text>
+         sodipodi:role="line">menu_active_width</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 716.79899,381.53375 -42.28428,0"
@@ -22564,7 +22564,7 @@
          sodipodi:role="line"
          id="tspan14301"
          x="725.81531"
-         y="356.52332">menuFrameWidth</tspan></text>
+         y="356.52332">menu_frame_width</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
@@ -22576,7 +22576,7 @@
          sodipodi:role="line"
          id="tspan14305"
          x="813.74603"
-         y="448.33862">menuActiveHeight</tspan></text>
+         y="448.33862">menu_active_height</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22600,7 +22600,7 @@
          y="491.07001"
          x="813.69794"
          id="tspan14313"
-         sodipodi:role="line">menuFrameHeight</tspan></text>
+         sodipodi:role="line">menu_frame_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
@@ -22828,32 +22828,32 @@
          y="870.65234"
          x="270.80109"
          id="tspan6800"
-         sodipodi:role="line">11. rotationYwZ</tspan><tspan
+         sodipodi:role="line">11. rotation_y_z</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="884.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6802">12. rotationZwY</tspan><tspan
+         id="tspan6802">12. rotation_z_y</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="898.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6804">13. rdotation XwZ</tspan><tspan
+         id="tspan6804">13. rotation_x_z</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="912.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6806">14. rotationZwX</tspan><tspan
+         id="tspan6806">14. rotation_z_x</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="926.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6808">15. rotationXwY</tspan><tspan
+         id="tspan6808">15. rotation_x_y</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="940.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6810">16. rotationYwX</tspan><tspan
+         id="tspan6810">16. rotation_y_x</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="954.65234"
          x="270.80109"
@@ -22863,17 +22863,17 @@
          y="968.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6814">21. rotationDegreesYZ</tspan><tspan
+         id="tspan6814">21. rotation_degrees_y_z</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="982.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6816">22. rotationDegreesXZ</tspan><tspan
+         id="tspan6816">22. rotation_degrees_x_z</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="996.65234"
          x="270.80109"
          sodipodi:role="line"
-         id="tspan6818">23. rotationDegreesXY</tspan></text>
+         id="tspan6818">23. rotation_degrees_x_y</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
@@ -22885,17 +22885,17 @@
          sodipodi:role="line"
          x="398.80109"
          y="870.65234"
-         style="font-size:14px;text-align:start;text-anchor:start">31. boostX</tspan><tspan
+         style="font-size:14px;text-align:start;text-anchor:start">31. boost_x</tspan><tspan
          sodipodi:role="line"
          x="398.80109"
          y="884.65234"
          style="font-size:14px;text-align:start;text-anchor:start"
-         id="tspan6896">32. boostY</tspan><tspan
+         id="tspan6896">32. boost_y</tspan><tspan
          sodipodi:role="line"
          x="398.80109"
          y="898.65234"
          style="font-size:14px;text-align:start;text-anchor:start"
-         id="tspan6898">33. boostZ</tspan><tspan
+         id="tspan6898">33. boost_z</tspan><tspan
          sodipodi:role="line"
          x="398.80109"
          y="912.65234"
@@ -22905,17 +22905,17 @@
          x="398.80109"
          y="926.65234"
          style="font-size:14px;text-align:start;text-anchor:start"
-         id="tspan6902">41. boostBetaX</tspan><tspan
+         id="tspan6902">41. boost_beta_x</tspan><tspan
          sodipodi:role="line"
          x="398.80109"
          y="940.65234"
          style="font-size:14px;text-align:start;text-anchor:start"
-         id="tspan6904">42. boostBetaY</tspan><tspan
+         id="tspan6904">42. boost_beta_y</tspan><tspan
          sodipodi:role="line"
          x="398.80109"
          y="954.65234"
          style="font-size:14px;text-align:start;text-anchor:start"
-         id="tspan6906">43. boostBetaZ</tspan></text>
+         id="tspan6906">43. boost_beta_z</tspan></text>
     <text
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
@@ -22927,7 +22927,7 @@
          y="848.00757"
          x="269.25983"
          id="tspan6910"
-         sodipodi:role="line">NamedPoints</tspan></text>
+         sodipodi:role="line">Named Grid Points</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text6912"
@@ -22939,12 +22939,12 @@
          style="font-size:14px;text-align:start;text-anchor:start"
          y="870.65234"
          x="484.80109"
-         sodipodi:role="line">51. showFullScreen</tspan><tspan
+         sodipodi:role="line">51. show_full_screen</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="884.65234"
          x="484.80109"
          sodipodi:role="line"
-         id="tspan6955">52. showMenus</tspan><tspan
+         id="tspan6955">52. show_menus</tspan><tspan
          style="font-size:14px;text-align:start;text-anchor:start"
          y="898.65234"
          x="484.80109"
@@ -22978,7 +22978,7 @@
          y="515.75549"
          x="45.63443"
          id="tspan6979"
-         sodipodi:role="line">frameSkyHeight</tspan></text>
+         sodipodi:role="line">frame_sky_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
@@ -22991,7 +22991,7 @@
          sodipodi:role="line"
          id="tspan6983"
          x="23.472393"
-         y="659.73065">frameGroundHeight</tspan></text>
+         y="659.73065">frame_ground_height</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23009,7 +23009,7 @@
          sodipodi:role="line"
          id="tspan6989"
          x="441.76724"
-         y="398.20264">boostArrowLength</tspan></text>
+         y="398.20264">boost_arrow_length</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 308.12132,791.53375 -37.02082,0"
@@ -23027,7 +23027,7 @@
          y="797.70404"
          x="318.97375"
          id="tspan6995"
-         sodipodi:role="line">rotationArrowLength</tspan></text>
+         sodipodi:role="line">rotation_arrow_length</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 425.12132,751.53375 -26.02082,0"
@@ -23045,7 +23045,7 @@
          sodipodi:role="line"
          id="tspan7001"
          x="293.36368"
-         y="756.03552">homeWidth</tspan></text>
+         y="756.03552">home_width</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23063,7 +23063,7 @@
          y="689.82098"
          x="103.43819"
          id="tspan7007"
-         sodipodi:role="line">homeHeight</tspan></text>
+         sodipodi:role="line">home_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
@@ -23187,7 +23187,7 @@
          y="397.7442"
          x="35.767242"
          id="tspan7047"
-         sodipodi:role="line">appHeight</tspan></text>
+         sodipodi:role="line">app_height</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23205,6 +23205,6 @@
          sodipodi:role="line"
          id="tspan7053"
          x="760.20447"
-         y="814.50806">appWidth</tspan></text>
+         y="814.50806">app_width</tspan></text>
   </g>
 </svg>
