@@ -1,0 +1,28 @@
+From: http://argtable.sourceforge.net/doc/argtable2-intro.html
+
+#include <argtable2.h>
+
+/* global arg_xxx structs */
+struct arg_lit *a, *b;   // int, lit(boolean) double
+struct arg_int *scal;
+struct arg_end *end;     // error holder
+
+int main(int argc, cahr **argv) {
+
+    int nerrors;
+
+    void *argtable[] ={
+        a = arg_lit0("a", "apples", "the -a option"),
+        b = arg_lit0("b", "bananas", "the -b option"),
+        scal = arg_int0(NULL, "scalar","<n>", "foo value"),
+        end = arg_end(20),
+    };
+
+    if (arg_nullcheck(argtable) != 0)
+        printf("error: insufficient memory\n");
+
+    nerrors = arg_parse(argc,argv,argtable);
+    if (nerrors > 0) arg_print_errors(stdout,end,"myprog");
+
+    return 0;
+}

@@ -1,0 +1,9 @@
+http://www.raywenderlich.com/3716/unit-testing-in-xcode-4-quick-start-guide
+
+OCUnit
+build into Xcode
+
+Note: UIViews hard to test
+Controls: hard to test
+GHUnit
+OCMock
