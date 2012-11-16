@@ -12,6 +12,16 @@ dependencies {
         testCompile 'junit:junit:4.8.2'
 }
 
+task (makeGridShell, dependsOn: classes, type: JavaExec) {
+    main = 'org.visualphysics.layout.Grid'
+    classpath= sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+    this.set("cmd", (commandLine =~ /[\[\],]/).replaceAll(" "))
+    this.set("shCmd", "#!/bin/bash\n" + this.get("cmd") + " \$@")
+    File shFile = file('bin/Grid.java.sh')
+    shFile.write(this.get("shCmd"))
+}
+
 task (makeGoldenBirthdayYearShell, dependsOn: classes, type: JavaExec) {
     main = 'org.visualphysics.GoldenBirthdayYear'
     classpath= sourceSets.main.runtimeClasspath
