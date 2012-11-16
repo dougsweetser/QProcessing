@@ -41,9 +41,9 @@ if __name__ == '__main__':
     while argv:
         x = argv.pop(0)
         y = argv.pop(0)
-        p = Grid(x, y)
+        g = Grid(x, y)
         if args.sprint:
-            p.simple_print()
+            g.simple_print()
         if args.pprint:
-            p.pretty_print()
+            g.pretty_print()
 
