@@ -36,12 +36,12 @@ sub print_golden_birthday_year {
     return $output;
 }
 
-run() unless caller;
+main() unless caller;
 
 my $pprint;
 my @birth_years;
 
-sub run {
+sub main {
     __get_opt();
 
     while (my $birth_year = shift @birth_years) {
@@ -62,7 +62,7 @@ sub __get_opt {
            "pprint!" => \$pprint,
            "help!"   => \$help);
 
-    my $help_string = qq(Calculates the golden birth, which is the birth year added to the birth digits, so someone born in 2004 would have their golden birthday in 2004 + 4 = 2008.
+    my $help_string = qq(usage: GoldenBirthdayYear.pm [-h] [-p]\n\nCalculates the golden birth, which is the birth year added to the birth digits, so someone born in 2004 would have their golden birthday in 2004 + 4 = 2008.
 
 optional arguments:
   -h, --help    show this help message and exit

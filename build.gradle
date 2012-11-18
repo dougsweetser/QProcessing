@@ -12,14 +12,20 @@ dependencies {
         testCompile 'junit:junit:4.8.2'
 }
 
-task (makeGoldenBirthdayYearShell, dependsOn: classes, type: JavaExec) {
-    main = 'org.visualphysics.GoldenBirthdayYear'
-    classpath= sourceSets.main.runtimeClasspath
-    classpath configurations.runtime
-    this.set("cmd", (commandLine =~ /[\[\],]/).replaceAll(" "))
-    this.set("shCmd", "#!/bin/bash\n" + this.get("cmd") + " \$@")
-    File shFile = file('bin/GoldenBirthdayYear.java.sh')
-    shFile.write(this.get("shCmd"))
+
+task (makeJavaShells, dependsOn: classes, type: JavaExec) {
+
+    def java_files = ['org.visualphysics.layout.Grid':'bin/Grid.java.sh', 'org.visualphysics.layout.Size':'bin/Size.java.sh']
+
+    java_files.each{k,v->
+        main = k
+        classpath= sourceSets.main.runtimeClasspath
+        classpath configurations.runtime
+        this.set("cmd", (commandLine =~ /[\[\],]/).replaceAll(" "))
+        this.set("shCmd", "#!/bin/bash\n" + this.get("cmd") + " \$@")
+        File shFile = file(v)
+        shFile.write(this.get("shCmd"))
+    }
 }
 
 task tarForDevRelease(type: Tar) {
@@ -28,5 +34,6 @@ task tarForDevRelease(type: Tar) {
     exclude 'Archive'
     exclude '.gradle'
     exclude '*swp'
+    exclude '*java.sh'
     compression = Compression.GZIP
 }

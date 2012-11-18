@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="990"
+   height="765"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="python_vs_perl.runnable_classes.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2902"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2955"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3079"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3212"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3283"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3354"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3425"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3514"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3545"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="493.04724"
+     inkscape:cy="300.699"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1170"
+     inkscape:window-height="989"
+     inkscape:window-x="107"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-287.36218)">
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       x="92.807762"
+       y="357.40878"
+       id="text2961"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2963"
+         x="92.807762"
+         y="357.40878"
+         style="font-size:32px">Python vs Perl: Runnable Classes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       x="22.807762"
+       y="406.0224"
+       id="text2965"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="22.807762"
+         y="406.0224"
+         id="tspan2973">def ...</tspan><tspan
+         sodipodi:role="line"
+         x="22.807762"
+         y="430.0224"
+         id="tspan2977">test_x(self)</tspan><tspan
+         sodipodi:role="line"
+         x="22.807762"
+         y="454.0224"
+         id="tspan2989">if '__name__' = '__main__'</tspan><tspan
+         sodipodi:role="line"
+         x="22.807762"
+         y="478.0224"
+         id="tspan3586">for b in bs:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       x="355.32233"
+       y="399.84662"
+       id="text2979"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="355.32233"
+         y="399.84662"
+         id="tspan2991">my</tspan><tspan
+         sodipodi:role="line"
+         x="355.32233"
+         y="423.84662"
+         id="tspan3103">package + sub new() = class</tspan><tspan
+         sodipodi:role="line"
+         x="355.32233"
+         y="447.84662"
+         id="tspan3099">sub func = class.method</tspan><tspan
+         sodipodi:role="line"
+         x="355.32233"
+         y="447.84662"
+         id="tspan3584">my ($self) = @_</tspan><tspan
+         sodipodi:role="line"
+         x="355.32233"
+         y="471.84662"
+         id="tspan3101">-&gt; for .</tspan></text>
+    <image
+       y="516.12164"
+       x="339.97449"
+       id="image3356"
+       height="366.85989"
+       width="338.83713"
+       xlink:href="file:///Users/doug/Pictures/MP%20Navigator%20EX/2012_11_04/perl.class.top.jpg" />
+    <image
+       y="488.11322"
+       x="678.00775"
+       id="image3427"
+       height="500.94055"
+       width="307.8952"
+       xlink:href="file:///Users/doug/Pictures/MP%20Navigator%20EX/2012_11_04/perl.class.bottom.jpg" />
+    <image
+       y="504.69217"
+       x="11.046637"
+       id="image3516"
+       height="392.65274"
+       width="340.29904"
+       xlink:href="file:///Users/doug/Pictures/MP%20Navigator%20EX/2012_11_04/python.class.jpg" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       x="731.41357"
+       y="183.8466"
+       id="text3551"
+       sodipodi:linespacing="100%"
+       transform="translate(0,287.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan3553"
+         x="731.41357"
+         y="183.8466" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3555"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Palatino;font-style:normal;font-weight:normal;font-size:24px;-inkscape-font-specification:Palatino;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;line-height:100%"><flowRegion
+         id="flowRegion3557"><rect
+           id="rect3559"
+           width="103.85631"
+           height="45.299026"
+           x="657.38837"
+           y="146.28157" /></flowRegion><flowPara
+         id="flowPara3561"></flowPara></flowRoot>    <text
+       sodipodi:linespacing="100%"
+       id="text3563"
+       y="399.84662"
+       x="699.32233"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
+       xml:space="preserve"><tspan
+         id="tspan3571"
+         y="399.84662"
+         x="699.32233"
+         sodipodi:role="line">run() unless caller</tspan><tspan
+         y="423.84662"
+         x="699.32233"
+         sodipodi:role="line"
+         id="tspan3580">sub run</tspan><tspan
+         y="447.84662"
+         x="699.32233"
+         sodipodi:role="line"
+         id="tspan3588">while, shift </tspan><tspan
+         y="471.84662"
+         x="699.32233"
+         sodipodi:role="line"
+         id="tspan3582">sub __get_opt</tspan></text>
+  </g>
+</svg>

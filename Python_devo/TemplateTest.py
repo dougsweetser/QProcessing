@@ -1,13 +1,13 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3.3
 
 import unittest
 import template
 
-class TestStuff(unittest.TestCase):
+class TemplateTest(unittest.TestCase):
 
     def setUp(self):
         self.input = 'foo'
-        self.t = template.Template(self.input)
+        self.t = Template.Template(self.input)
 
     def test_calc(self):
         d = self.t.calc(False)
