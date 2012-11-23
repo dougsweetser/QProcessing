@@ -181,39 +181,10 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>357</x>
-      <y>455</y>
-      <w>196</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>Rotations
---
-# void setStepSize(int i)
-# void setModeContinuous(bool b)
-# void setModeDiscrete(bool b)</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>357</x>
-      <y>532</y>
-      <w>140</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>Boosts
---
-# void boostUp(String x)
-# void boostDown(String x)</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
       <x>413</x>
       <y>392</y>
       <w>70</w>
-      <h>21</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes>Color
 --</panel_attributes>
@@ -448,20 +419,6 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>413</x>
-      <y>336</y>
-      <w>133</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>RotationAndBoostControls
---
-# void showControls()
-# void hideControls()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
       <x>798</x>
       <y>182</y>
       <w>154</w>
@@ -494,20 +451,26 @@ Size frame_width</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>560</x>
-      <y>189</y>
+      <y>168</y>
       <w>189</w>
-      <h>112</h>
+      <h>161</h>
     </coordinates>
     <panel_attributes>Boosts extents Layout
 implements NameGrid, NameSize
 --
+boolean showBoostControl
 Grid boost_x
 Grid boost_y
 Grid boost_z
 Grid boost_beta_x
 Grid boost_beta_y
 Grid boost_beta_z
-Size rotation_arrow_length</panel_attributes>
+Size rotation_arrow_length
+--
+boolean showBoostControl()
+boolean hideBoostControl()
+float boostUp(String x/y/z)
+float boostDown(String x/y/z)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -531,7 +494,7 @@ Size   control_length
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>560</x>
-      <y>322</y>
+      <y>336</y>
       <w>196</w>
       <h>63</h>
     </coordinates>
@@ -546,13 +509,16 @@ Size home_length</panel_attributes>
     <type>com.umlet.element.Class</type>
     <coordinates>
       <x>560</x>
-      <y>546</y>
+      <y>497</y>
       <w>168</w>
-      <h>147</h>
+      <h>231</h>
     </coordinates>
     <panel_attributes>Rotations extends Layout
 implements NameGrid, NameSize
 --
+boolean rotationControl
+int  StepSize
+boolean RotationDiscrete
 Grid rotation_degrees_x_y
 Grid rotation_degrees_x_z
 Grid rotation_degrees_y_z
@@ -563,7 +529,12 @@ Grid rotation_y_z
 Grid rotation_z_x
 Grid rotation_z_y
 Size rotation_arrow_length
-</panel_attributes>
+--
+boolean showRotationControl()
+boolean hideRotationControl()
+int setStepSize(int i)
+boolean setRotationContinuous()
+boolean setRotationDiscrete()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -605,17 +576,21 @@ Size gutter_top
       <x>798</x>
       <y>385</y>
       <w>147</w>
-      <h>98</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Menu extends Layout 
 implements NamedSize
 --
+boolean showMenus
 Size menu_active_height
 Size menu_active_width
 Size menu_frame_height
 Size menu_frame_width
 Size menus_height
-Size menus_width</panel_attributes>
+Size menus_width
+--
+boolean showMenus()
+boolean hideMenus()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -632,7 +607,9 @@ implements NameGrid, NameSize
 int    app_height
 int    app_width
 String orientation
-</panel_attributes>
+boolean update
+--
+boolean? draw_background()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

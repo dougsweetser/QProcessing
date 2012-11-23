@@ -1,5 +1,24 @@
+
+0.2.0 / 2012-11-23 
+==================
+Worked on static UML class diagragm.
+Got test driven development model working for Python, Java, and Perl.
+
+Detailed work:
+  * Moved more functions into rotations, boosts, and menu classes.
+  * Added Layout.Size Class.  Wrote in Java/Python/Perl test and classes.
+  * Added task makeJavaShells.  Need to add a new key/value pair for each runnable java class.
+  * Added Layout.Grid class.
+  * Builds another java executable.
+  * Using variable names_with_underscores instead of mixedCaseNames.
+  * Added  appLength, appWidth to Layout class.
+  * Lots of work on the Layout subclasses.
+  * Changed #! line to use env, more general.
+  * Use main() instead of run(), more traditional name.
+  * Using setUp in test classes.
+
 Version 0.1  Sept, 2012
 Mockups are mature.  Clickable PDF files can be downloaded to a phone.
 
 Version 0.0   April 02, 2012
-Initial commit at github.com/dougsweetser/QProcessing
+Start it up.
