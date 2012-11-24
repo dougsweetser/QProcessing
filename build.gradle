@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-version = 0.1
+version = new File('/Users/doug/Dropbox/QProcessing/VERSION').text[0..-2]
 
 repositories {
         mavenCentral()
@@ -29,11 +29,20 @@ task (makeJavaShells, dependsOn: classes, type: JavaExec) {
 }
 
 task tarForDevRelease(type: Tar) {
-    from '.'
-    exclude 'build'
-    exclude 'Archive'
-    exclude '.gradle'
-    exclude '*swp'
-    exclude '*java.sh'
+    from(project.file('.')) {
+        exclude '**/*.swp'
+        exclude '.gradle'
+        exclude '.idea'
+        exclude 'build' 
+        exclude 'Archive'
+        exclude 'Books'
+        exclude 'code_comparisons/*jpg'
+        exclude 'code_comparisons/*png'
+        exclude 'code_comparisons/*svg'
+        exclude 'Mockups/assets'
+        exclude 'ObjectiveC'
+        exclude 'Python_devo/__pycache__'
+        exclude 'src/main/python/visualphysics/layout/__pycache__'
+    }
     compression = Compression.GZIP
 }
