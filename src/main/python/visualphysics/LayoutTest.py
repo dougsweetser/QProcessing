@@ -15,7 +15,7 @@ class LayoutTest(unittest.TestCase):
              'iPad':[2048, 1536]}
         self.layouts = {}
         for k,v in self.devices.items():
-            self.layouts.update({k:Layout.Layout(v[0], v[1])})
+            self.layouts.update({k:Layout.Layout(v[0], v[1], testing=True)})
 
     def test_app_height(self):
         for k,layout in self.layouts.items():
@@ -41,14 +41,10 @@ class LayoutTest(unittest.TestCase):
             result = "app_max is: " + str(dmax) + "\napp_min is: " + str(dmin)
             self.assertEqual(pp, result)
 
-    def test_setup(self):
+    def test_run(self):
         for k,layout in self.layouts.items():
-            s = layout.setup()
-            dmax = self.devices[k][0]
-            dmin = self.devices[k][1]
-            result = "size( " + str(dmax) + ", " + str(dmin) + ")"
-            self.assertEqual(s, result)
-
+            exit_code = layout.run()
+            self.assertFalse(exit_code)
          
 if __name__ == '__main__':
     unittest.main()

@@ -1,11 +1,11 @@
 package org.visualphysics.layout;
 
-import com.beust.jcommander.Parameter;
 import java.util.ArrayList;
 import java.util.List;
+import com.beust.jcommander.Parameter;
         
-public class SizeArgs {
-
+public class SizeArgs 
+{
     @Parameter(names={"-s", "--sprint"}, required=false, description = "simple print")
     public boolean sprint = false;
 
