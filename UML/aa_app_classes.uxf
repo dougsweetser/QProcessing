@@ -11,7 +11,7 @@
     </coordinates>
     <panel_attributes>Boundaries
 --
-# void setBoundaries(int i)</panel_attributes>
+int setBoundaries(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -24,7 +24,7 @@
     </coordinates>
     <panel_attributes>Particles
 --
-# void setParticles(int i)</panel_attributes>
+int setParticles(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -37,7 +37,7 @@
     </coordinates>
     <panel_attributes>Parameters
 --
-# void setParameters(int i)</panel_attributes>
+int setParameters(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -50,7 +50,7 @@
     </coordinates>
     <panel_attributes>Fields
 --
-# void setFields(int i)</panel_attributes>
+String setFields(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -100,7 +100,7 @@
     </coordinates>
     <panel_attributes>Periodic
 --
-# void setPeriod(int iSeconds)</panel_attributes>
+int setPeriod(int iSeconds)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -113,7 +113,7 @@
     </coordinates>
     <panel_attributes>Spatial
 --
-# boolean outOfBounds(Q8 v)</panel_attributes>
+boolean outOfBounds(Q8 v)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -126,7 +126,7 @@
     </coordinates>
     <panel_attributes>Views
 --
-# void setViews(int i)</panel_attributes>
+int setViews(int i)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -175,7 +175,7 @@
     </coordinates>
     <panel_attributes>Language
 --
-# void setLanguage(String s)</panel_attributes>
+String setLanguage(String s)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -213,8 +213,9 @@
 -bool rotationModeDiscrete
 -bool rotationModeContinuous
 -color text
-# void printSettings()
-# void saveSettings()</panel_attributes>
+--
+String printSettings()
+boolean saveSettings()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -227,13 +228,13 @@
     </coordinates>
     <panel_attributes>Q8
 --
-# Q8 add(Q8 v, Q8 w)
-# Q8 subtract(Q8 v, Q8 w)
-# Q8 timeReflection(Q8 v)
-# Q8 spaceReflection(Q8 v)
-# Q8 rotation(Q8 v, int d)
-# Q8 boost(Q8 v, float b, String x)
-# Q8 gamma(Q8 v, 1..15)
+Q8 add(Q8 v, Q8 w)
+Q8 subtract(Q8 v, Q8 w)
+Q8 timeReflection(Q8 v)
+Q8 spaceReflection(Q8 v)
+Q8 rotation(Q8 v, int d)
+Q8 boost(Q8 v, float b, String x)
+Q8 gamma(Q8 v, 1..15)
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -284,7 +285,7 @@
     </coordinates>
     <panel_attributes>OneTime
 --
-# void restart(bool b)</panel_attributes>
+boolean restart(bool b)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -405,48 +406,33 @@
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>147</x>
-      <y>189</y>
-      <w>98</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>org.processing.*
---
-# void setup()
-# void draw()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
       <x>602</x>
       <y>161</y>
       <w>126</w>
       <h>84</h>
     </coordinates>
     <panel_attributes>Frame extends Layout
-implements NameSize
+implements NameSize,
+ProcessingFile
 --
 Size frame_ground_height
 Size frame_height
 Size frame_sky_height
-Size frame_width
---
-String setup()</panel_attributes>
+Size frame_width</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>357</x>
-      <y>112</y>
+      <x>539</x>
+      <y>0</y>
       <w>105</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>interface NameGrid
 --
-# Grid[] set_grid()
-# Grid{} grid_group()</panel_attributes>
+Grid[] set_grid()
+Grid{} grid_group()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -459,6 +445,7 @@ String setup()</panel_attributes>
     </coordinates>
     <panel_attributes>Boosts extents Layout
 implements NameGrid, NameSize
+ProcessingFile
 --
 boolean showBoostControl
 Grid boost_x
@@ -472,8 +459,7 @@ Size rotation_arrow_length
 boolean showBoostControl()
 boolean hideBoostControl()
 float boostUp(String x/y/z)
-float boostDown(String x/y/z)
-String setup()</panel_attributes>
+float boostDown(String x/y/z)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -486,13 +472,11 @@ String setup()</panel_attributes>
     </coordinates>
     <panel_attributes>show extends Layout
 implements NameGrid, NameSize
+ProcessingFile
 --
 Grid   show_full_screen
 Grid   show_menu
-Size   control_length
---
-String setup()
-</panel_attributes>
+Size   control_length</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -505,11 +489,10 @@ String setup()
     </coordinates>
     <panel_attributes>Home extends Layout
 implements NameGrid, NameSize
+ProcessingFile
 --
 Grid home
-Size home_length
---
-String setup()</panel_attributes>
+Size home_length</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -518,10 +501,11 @@ String setup()</panel_attributes>
       <x>371</x>
       <y>504</y>
       <w>154</w>
-      <h>231</h>
+      <h>238</h>
     </coordinates>
     <panel_attributes>Rotations extends Layout
 implements NameGrid, NameSize
+ProcessingFile
 --
 boolean rotationControl
 int  StepSize
@@ -541,22 +525,21 @@ boolean showRotationControl()
 boolean hideRotationControl()
 int setStepSize(int i)
 boolean setRotationContinuous()
-boolean setRotationDiscrete()
-String setup()</panel_attributes>
+boolean setRotationDiscrete()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>588</x>
-      <y>112</y>
+      <x>651</x>
+      <y>0</y>
       <w>112</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>interface NameSize
 --
-# Size[] set_size()
-# Size{} size_group()</panel_attributes>
+Size[] set_size()
+Size{} size_group()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -587,7 +570,8 @@ Size gutter_top
       <h>175</h>
     </coordinates>
     <panel_attributes>Menu extends Layout 
-implements NamedSize
+implements NamedSize,
+ProcesssingFile
 --
 int rows
 int columns
@@ -601,8 +585,7 @@ Size menus_height
 Size menus_width
 --
 boolean showMenus()
-boolean hideMenus()
-String setup()</panel_attributes>
+boolean hideMenus()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -610,24 +593,28 @@ String setup()</panel_attributes>
     <coordinates>
       <x>357</x>
       <y>0</y>
-      <w>385</w>
-      <h>84</h>
+      <w>154</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Layout
-implements NameGrid, NameSize
+implements ProcessingFile
 --
-int    app_height
-int    app_width
-boolean update
+boolean  update
+int width
+int height
+int app_min
+int app_max
+boolean portrait
+boolean testing
 --
-string setup()</panel_attributes>
+String pprint()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>476</x>
-      <y>112</y>
+      <x>546</x>
+      <y>168</y>
       <w>42</w>
       <h>42</h>
     </coordinates>
@@ -640,8 +627,8 @@ int y</panel_attributes>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>532</x>
-      <y>112</y>
+      <x>546</x>
+      <y>224</y>
       <w>42</w>
       <h>28</h>
     </coordinates>
@@ -672,15 +659,31 @@ String setOrientationLandscape()</panel_attributes>
       <x>553</x>
       <y>595</y>
       <w>154</w>
-      <h>70</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>RunProcessing
 --
-String pathToProcessing
+String path_to_processing_py
 --
-String collectSetups()
-String collectDraws()
-boolean run_processing()</panel_attributes>
+String construct_processing_py()
+String write_processing_py()
+boolean run_processing_py()
+boolean run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>539</x>
+      <y>56</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>interface ProcessingFile
+--
+setup()
+draw()
+run()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
