@@ -316,7 +316,7 @@
      inkscape:window-width="1020"
      inkscape:window-height="776"
      inkscape:window-x="4"
-     inkscape:window-y="0"
+     inkscape:window-y="22"
      inkscape:window-maximized="0">
     <sodipodi:guide
        orientation="1,0"
@@ -22354,7 +22354,7 @@
          y="706.59558"
          x="789.4201"
          id="tspan14149"
-         sodipodi:role="line">gutter_bottom</tspan></text>
+         sodipodi:role="line">gutter_menu_bottom</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 762,697.36218 0,8.34315"
@@ -22372,7 +22372,7 @@
          sodipodi:role="line"
          id="tspan14155"
          x="789.74756"
-         y="416.59558">gutter_top</tspan></text>
+         y="416.59558">gutter_menu_top</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22504,7 +22504,9 @@
          sodipodi:role="line"
          id="tspan14281"
          x="723.35657"
-         y="756.52161">menus_width</tspan></text>
+         y="756.52161">menu_min <tspan
+   style="-inkscape-font-specification:URW Palladio L Bold;font-family:URW Palladio L;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999996px;text-anchor:start;text-align:start;writing-mode:lr;line-height:100%"
+   id="tspan7057">(# menu_values)</tspan></tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22522,7 +22524,9 @@
          y="562.59161"
          x="785.57562"
          id="tspan14287"
-         sodipodi:role="line">menus_height</tspan></text>
+         sodipodi:role="line">menu_max <tspan
+   style="-inkscape-font-specification:URW Palladio L Bold;font-family:URW Palladio L;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13.99999996px;text-anchor:start;text-align:start;writing-mode:lr;line-height:100%"
+   id="tspan7055">(# menu_keys)</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 780.67945,696.66905 0,-277.99347"
@@ -23187,7 +23191,7 @@
          y="397.7442"
          x="35.767242"
          id="tspan7047"
-         sodipodi:role="line">app_height</tspan></text>
+         sodipodi:role="line">app_min</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23205,6 +23209,42 @@
          sodipodi:role="line"
          id="tspan7053"
          x="760.20447"
-         y="814.50806">app_width</tspan></text>
+         y="814.50806">app_max</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+       x="58.55563"
+       y="709.8717"
+       id="text7059"
+       sodipodi:linespacing="100%"
+       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan7061"
+         x="58.55563"
+         y="709.8717">gutter_frame_bottom</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7063"
+       d="m 256,697.36218 0,8.34315"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)" />
+    <text
+       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
+       sodipodi:linespacing="100%"
+       id="text7065"
+       y="415.78259"
+       x="69.747559"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+       xml:space="preserve"><tspan
+         y="415.78259"
+         x="69.747559"
+         id="tspan7067"
+         sodipodi:role="line">gutter_frame_top</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+       d="m 232,407.36218 0,11.87868"
+       id="path7069"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

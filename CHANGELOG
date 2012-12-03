@@ -1,3 +1,21 @@
+0.3.0 / 2012-12-02 
+==================
+Have a working version of Layout.py which can run processing for common sized apps, from Android to iPad in portait or landscape mode.
+Moved code for Java and Perl into the archive since there is not enough reason to keep those versions alive.
+
+Detailed work:
+  * Moving Java and Perl code into the Archive since Python looks like the way to go.
+  * Version 0.3.0 with working RunProcessing and Layout classes.
+  * Merge branch 'feature/RunProcessing' into devo Got program and tests to work for Python. Decided to abandon work to also do so in Java and Perl since there is not enough payoff with the alternatives.
+  * Will not check in files used to generate processing graphs.
+  * Added processing.jar which can create processing animations given a text file.
+  * Python test/class for RunProcessing work.
+  * Added setup() method.
+  * Added RunProcessing class, setup() methods to Layout subclasses.
+  * Have a few more gutters.
+  * Made tarball releases smaller.
+  * Keep VERSION external of build.gradle so easier to find.
+  * Merge branch 'release/0.2' into devo
 
 0.2.0 / 2012-11-23 
 ==================
