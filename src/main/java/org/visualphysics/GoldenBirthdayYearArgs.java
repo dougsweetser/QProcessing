@@ -1,10 +1,11 @@
 package org.visualphysics;
 
-import com.beust.jcommander.Parameter;
 import java.util.ArrayList;
 import java.util.List;
+import com.beust.jcommander.Parameter;
 
-public class GoldenBirthdayYearArgs{
+public class GoldenBirthdayYearArgs
+{
 
     @Parameter(names={"-p", "--pprint"}, required=false, description = "pretty print")
     public boolean pprint = false;
