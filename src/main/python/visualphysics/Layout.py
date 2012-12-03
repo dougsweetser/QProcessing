@@ -45,7 +45,7 @@ class Layout:
         methods = co.OrderedDict()
         methods["def setup():"] = [self.setup()]
         methods["def draw():"] = [self.draw()]
-        runner = RunProcessing.RunProcessing("Loyout", methods, self.testing)
+        runner = RunProcessing.RunProcessing("Layout", methods, self.testing)
         exit_code = runner.run()
         return exit_code
 
