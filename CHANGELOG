@@ -1,4 +1,26 @@
 
+n.n.n / 2012-12-02 
+==================
+
+  * Version 0.3.0 with working RunProcessing and Layout classes.
+  * Merge branch 'feature/RunProcessing' into devo Got program and tests to work for Python. Decided to abandon work to also do so in Java and Perl since there is not enough payoff with the alternatives.
+  * Will not check in files used to generate processing graphs.
+  * Dealt with RunProcessing.
+  * Tweak
+  * Tweaks
+  * Added processing.jar which can create processing animations given a text file.
+  * Fixed bugs.
+  * Python test/class for RunProcessing work.
+  * Added setup() method.
+  * Initial checkin.
+  * Tweaked.
+  * Added RunProcessing class, setup() methods to Layout subclasses.
+  * Have a few more gutters.
+  * Made tarball releases smaller.
+  * Keep VERSION external of build.gradle so easier to find.
+  * Unneed
+  * Merge branch 'release/0.2' into devo
+
 0.2.0 / 2012-11-23 
 ==================
 Worked on static UML class diagragm.
