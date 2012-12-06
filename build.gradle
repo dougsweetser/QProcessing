@@ -31,6 +31,7 @@ task (makeJavaShells, dependsOn: classes, type: JavaExec) {
 task tarForDevRelease(type: Tar) {
     from(project.file('.')) {
         exclude '**/*.swp'
+        exclude '**/*.pyc'
         exclude '.gradle'
         exclude '.idea'
         exclude 'build' 
@@ -42,7 +43,9 @@ task tarForDevRelease(type: Tar) {
         exclude 'Mockups/assets'
         exclude 'ObjectiveC'
         exclude 'Python_devo/__pycache__'
-        exclude 'src/main/python/visualphysics/layout/__pycache__'
+        exclude 'src/python/visualphysics/__pycache__'
+        exclude 'src/python/visualphysics/layout/__pycache__'
     }
+    print this.properties
     compression = Compression.GZIP
 }
