@@ -1,3 +1,14 @@
+
+0.3.1 / 2012-12-14 
+==================
+Rearranged directories to flatten the structure.
+Focus is entirely on Python, skipping Java and Perl.
+
+Detailed work:
+  * Made top directory of project is more compact.
+  * Moving unused files to Archive.
+  * Moving Java and Perl code into the Archive since Python looks like the way to go.
+  
 0.3.0 / 2012-12-02 
 ==================
 Have a working version of Layout.py which can run processing for common sized apps, from Android to iPad in portait or landscape mode.
