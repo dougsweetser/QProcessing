@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.3
 
 import unittest
+import re
+
 import Layout
 
 class LayoutTest(unittest.TestCase):
@@ -40,6 +42,21 @@ class LayoutTest(unittest.TestCase):
             dmin = self.devices[k][1]
             result = "app_max is: " + str(dmax) + "\napp_min is: " + str(dmin)
             self.assertEqual(pp, result)
+
+    def test_setup(self):
+        r = re.compile(r"fill|size|rect")
+        for k, layout in self.layouts.items():
+            s = layout.setup()
+            for line in s: 
+                self.assertTrue(r.match(line))
+
+    def test_draw(self):
+        r = re.compile(r"noLoop")
+        for k, layout in self.layouts.items():
+            s = layout.draw()
+            for line in s: 
+                print("line\n" + line)
+                self.assertTrue(r.match(line))
 
     def test_run(self):
         for k,layout in self.layouts.items():

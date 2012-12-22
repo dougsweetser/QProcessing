@@ -14,9 +14,6 @@ Super class to organize where things go in the app.
 Author: sweetser@alum.mit.edu'''
 class Layout:
 
-    global update
-    update = True
-
     def __init__(self, width=480, height=640, testing=False):
         self.width = width
         self.height = height
@@ -28,26 +25,36 @@ class Layout:
             self.app_min = height
             self.app_max = width
             self.portrait = True
+        self.update = True
         self.testing = testing
 
     def setup(self):
+        s = []
+        s.append("fill(256, 256, 256)")
         if (self.portrait):
-            result = "size( " + str(self.app_max) + ", " + str(self.app_min) +")"
+            xy = str(self.app_max) + ", " + str(self.app_min)
         else:
-            result = "size( " + str(self.app_min) + ", " + str(self.app_max) +")"
-        return result
+            xy = str(self.app_min) + ", " + str(self.app_max)
+        s.append("size( " + xy +")")
+        s.append("rect(0, 0, " + xy + ")" ) 
+        return s
 
     def draw(self):
-        result = "background(100)"
-        return result
+        d = []
+        d.append("noLoop()")
+        return d
 
     def run(self):
         methods = co.OrderedDict()
-        methods["def setup():"] = [self.setup()]
-        methods["def draw():"] = [self.draw()]
+        methods["def setup():"] = self.setup()
+        methods["def draw():"] = self.draw()
         runner = RunProcessing.RunProcessing("Layout", methods, self.testing)
         exit_code = runner.run()
         return exit_code
+
+    def set_size(self):
+        bt = ButtonTable.ButtonTable(self)
+        bt.set_size()
 
     def pprint(self):
         result = "app_max is: " + str(self.app_max) + "\napp_min is: " + str(self.app_min)
