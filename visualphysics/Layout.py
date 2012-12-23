@@ -32,10 +32,10 @@ class Layout:
         s = []
         s.append("fill(256, 256, 256)")
         if (self.portrait):
-            xy = str(self.app_max) + ", " + str(self.app_min)
-        else:
             xy = str(self.app_min) + ", " + str(self.app_max)
-        s.append("size( " + xy +")")
+        else:
+            xy = str(self.app_max) + ", " + str(self.app_min)
+        s.append("size(" + xy +")")
         s.append("rect(0, 0, " + xy + ")" ) 
         return s
 
