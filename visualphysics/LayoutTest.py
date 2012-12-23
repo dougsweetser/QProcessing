@@ -9,27 +9,32 @@ class LayoutTest(unittest.TestCase):
 
     def setUp(self):
         self.devices = \
-            {'square':[500, 500], \
-             'android_normal':[470, 320], \
-             'android_large':[640, 480], \
-             'android_xl':[960, 720], \
-             'iPhone':[960, 640], \
-             'iPad':[2048, 1536]}
+            {'square':[500, 500, True], \
+             'android_normal':[470, 320, True], \
+             'android_large':[640, 480, False], \
+             'android_xl':[960, 720, True], \
+             'iPhone':[960, 640, False]}
         self.layouts = {}
         for k,v in self.devices.items():
-            self.layouts.update({k:Layout.Layout(v[0], v[1], testing=True)})
+            self.layouts.update({k:Layout.Layout(v[0], v[1], portrait=v[2], testing=True)})
 
     def test_app_height(self):
         for k,layout in self.layouts.items():
-            m = layout.app_max
-            dmax = self.devices[k][0]
-            self.assertEqual(m, dmax)
+            if (layout.portrait):
+                h = self.devices[k][0]
+            else:
+                h = self.devices[k][1]
+            lh = layout.height
+            self.assertEqual(lh, h)
 
     def test_app_width(self):
         for k,layout in self.layouts.items():
-            m = layout.app_min
-            dmin = self.devices[k][1]
-            self.assertEqual(m, dmin)
+            if (layout.portrait):
+                w = self.devices[k][1]
+            else:
+                w = self.devices[k][0]
+            lw = layout.width
+            self.assertEqual(lw, w)
 
     def test_update(self):
         for k,layout in self.layouts.items():
@@ -37,10 +42,14 @@ class LayoutTest(unittest.TestCase):
 
     def test_pprint(self):
         for k,layout in self.layouts.items():
+            if (layout.portrait):
+                h = self.devices[k][0]
+                w = self.devices[k][1]
+            else:
+                h = self.devices[k][1]
+                w = self.devices[k][0]
+            result = "width is: " + str(w) + "\nheight is: " + str(h)
             pp = layout.pprint()
-            dmax = self.devices[k][0]
-            dmin = self.devices[k][1]
-            result = "app_max is: " + str(dmax) + "\napp_min is: " + str(dmin)
             self.assertEqual(pp, result)
 
     def test_setup(self):
@@ -55,7 +64,6 @@ class LayoutTest(unittest.TestCase):
         for k, layout in self.layouts.items():
             s = layout.draw()
             for line in s: 
-                print("line\n" + line)
                 self.assertTrue(r.match(line))
 
     def test_run(self):

@@ -447,7 +447,7 @@ Grid{} grid_group()</panel_attributes>
 implements NameGrid, NameSize
 ProcessingFile
 --
-boolean showBoostControl
+boolean boost_control_on
 Grid boost_x
 Grid boost_y
 Grid boost_z
@@ -456,10 +456,10 @@ Grid boost_beta_y
 Grid boost_beta_z
 Size rotation_arrow_length
 --
-boolean showBoostControl()
-boolean hideBoostControl()
-float boostUp(String x/y/z)
-float boostDown(String x/y/z)</panel_attributes>
+boolean show_boost_control()
+boolean hide_boost_control()
+float boost_up(String x/y/z)
+float boost_down(String x/y/z)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -500,14 +500,14 @@ Size home_length</panel_attributes>
     <coordinates>
       <x>371</x>
       <y>504</y>
-      <w>154</w>
+      <w>161</w>
       <h>238</h>
     </coordinates>
     <panel_attributes>Rotations extends Layout
 implements NameGrid, NameSize
 ProcessingFile
 --
-boolean rotationControl
+boolean rotation_control_on
 int  StepSize
 boolean RotationDiscrete
 Grid rotation_degrees_x_y
@@ -521,11 +521,11 @@ Grid rotation_z_x
 Grid rotation_z_y
 Size rotation_arrow_length
 --
-boolean showRotationControl()
-boolean hideRotationControl()
-int setStepSize(int i)
-boolean setRotationContinuous()
-boolean setRotationDiscrete()</panel_attributes>
+boolean show_rotation_control()
+boolean hide_rotation_control()
+int set_step_size(int i)
+boolean set_rotation_continuous()
+boolean set_rotation_discrete()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -553,11 +553,11 @@ Size{} size_group()</panel_attributes>
     <panel_attributes>Gutter extends Layout
 implements NamedSizes
 --
-Size gutter_bottom
-Size gutter_center
-Size gutter_left
-Size gutter_right
-Size gutter_top
+Size gutter_bottom()
+Size gutter_center()
+Size gutter_left()
+Size gutter_right()
+Size gutter_top()
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -566,48 +566,26 @@ Size gutter_top
     <coordinates>
       <x>602</x>
       <y>343</y>
-      <w>126</w>
+      <w>161</w>
       <h>175</h>
     </coordinates>
-    <panel_attributes>Menu extends Layout 
+    <panel_attributes>ButtonTable extends Layout 
 implements NamedSize,
 ProcesssingFile
 --
 int rows
 int columns
 int spacer
-boolean showMenus
-Size menu_active_height
-Size menu_active_width
-Size menu_frame_height
-Size menu_frame_width
-Size menus_height
-Size menus_width
+boolean menus_on
 --
-boolean showMenus()
-boolean hideMenus()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <type>com.umlet.element.Class</type>
-    <coordinates>
-      <x>357</x>
-      <y>0</y>
-      <w>154</w>
-      <h>119</h>
-    </coordinates>
-    <panel_attributes>Layout
-implements ProcessingFile
---
-boolean  update
-int width
-int height
-int app_min
-int app_max
-boolean portrait
-boolean testing
---
-String pprint()</panel_attributes>
+boolean show_button_table()
+boolena hide_button_table()
+Size button_table_active_height()
+Size button_table_active_width()
+Size button_table_frame_height()
+Size button_table_frame_width()
+Size button_table_max()
+Size button_table_min()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -642,15 +620,15 @@ int s</panel_attributes>
     <coordinates>
       <x>553</x>
       <y>525</y>
-      <w>154</w>
+      <w>168</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>Orientation
 --
-String orientation
+boolean portrait_orientation_on
 --
-String setOrientationPortrait()
-String setOrientationLandscape()</panel_attributes>
+boolean set_portrait_orientation()
+boolean set_rientation_landscape()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -684,6 +662,26 @@ boolean run()</panel_attributes>
 setup()
 draw()
 run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>357</x>
+      <y>0</y>
+      <w>154</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Layout
+implements ProcessingFile
+--
+int width
+int height
+boolean portrait
+boolean update
+boolean testing
+--
+String pprint()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -14,27 +14,21 @@ Super class to organize where things go in the app.
 Author: sweetser@alum.mit.edu'''
 class Layout:
 
-    def __init__(self, width=480, height=640, testing=False):
-        self.width = width
-        self.height = height
-        if (width > height):
-            self.app_max = width
-            self.app_min = height
-            self.portrait = False
+    def __init__(self, d1=480, d2=640, portrait=True, testing=False):
+        if (portrait):
+            self.width = min(d1, d2)
+            self.height = max(d1, d2)
         else:
-            self.app_min = height
-            self.app_max = width
-            self.portrait = True
+            self.width = max(d1, d2)
+            self.height = min(d1, d2)
+        self.portrait = portrait
         self.update = True
         self.testing = testing
 
     def setup(self):
         s = []
         s.append("fill(256, 256, 256)")
-        if (self.portrait):
-            xy = str(self.app_min) + ", " + str(self.app_max)
-        else:
-            xy = str(self.app_max) + ", " + str(self.app_min)
+        xy = str(self.width) + ", " + str(self.height)
         s.append("size(" + xy +")")
         s.append("rect(0, 0, " + xy + ")" ) 
         return s
@@ -57,7 +51,7 @@ class Layout:
         bt.set_size()
 
     def pprint(self):
-        result = "app_max is: " + str(self.app_max) + "\napp_min is: " + str(self.app_min)
+        result = "width is: " + str(self.width) + "\nheight is: " + str(self.height)
         print(result)
         return result
 
