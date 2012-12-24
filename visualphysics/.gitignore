@@ -1,2 +1,4 @@
 __pycache__
+Layout.processing.py
+RunProcessingTest.processing.py
 *.processing.py 
