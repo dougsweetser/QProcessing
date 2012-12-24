@@ -1,7 +1,8 @@
 #!/usr/bin/env python3.3
 
 import unittest
-import Size
+import re
+
 import ButtonTable
 import Layout
 
@@ -10,25 +11,23 @@ class ButtonTableTest(unittest.TestCase):
     def setUp(self):
         self.verbose = True
         self.devices = \
-            {'square':[500, 500], \
-             'android_normal':[470, 320], \
-             'android_large':[640, 480], \
-             'android_xl':[960, 720], \
-             'iPhone':[960, 640], \
-             'iPad':[2048, 1536]}
+            {'square':[500, 500, True], \
+             'android_normal':[470, 320, True], \
+             'android_large':[640, 480, False], \
+             'android_xl':[960, 720, True], \
+             'iPhone':[960, 640, False]}
         self.results = \
-            {'square':{'max':498, 'min':249, 'active_height':83, 'active_width':83, 'frame_height':79, 'frame_width':79}, \
-            'android_normal':{'max':318,'min':159, 'active_height':53, 'active_width':53, 'frame_height':49, 'frame_width':49}, \
-            'android_large':{'max':480, 'min':240, 'active_height':80, 'active_width':80, 'frame_height':76, 'frame_width':76}, \
-            'android_xl':{'max':720, 'min':360, 'active_height':120, 'active_width':120, 'frame_height':116, 'frame_width':116}, \
-            'iPhone':{'max':636, 'min':318, 'active_height':106, 'active_width':106, 'frame_height':102, 'frame_width':102}, \
-            'iPad':{'max':1536, 'min':768, 'active_height':256, 'active_width':256, 'frame_height':252, 'frame_width':252}}
+            {'square':{'max':498, 'min':249, 'active_height':83, 'active_width':83, 'frame_height':79, 'frame_width':79, 'draw':''}, \
+            'android_normal':{'max':318,'min':159, 'active_height':53, 'active_width':53, 'frame_height':49, 'frame_width':49, 'draw':''}, \
+            'android_large':{'max':480, 'min':240, 'active_height':80, 'active_width':80, 'frame_height':76, 'frame_width':76, 'draw':''}, \
+            'android_xl':{'max':720, 'min':360, 'active_height':120, 'active_width':120, 'frame_height':116, 'frame_width':116, 'draw':''}, \
+            'iPhone':{'max':636, 'min':318, 'active_height':106, 'active_width':106, 'frame_height':102, 'frame_width':102, 'draw':''}}
         self.layouts = {}
         self.bts = {}
         for k,v in self.devices.items():
-            lout = Layout.Layout(v[0], v[1], testing=True)
+            lout = Layout.Layout(v[0], v[1], portrait=v[2], testing=True)
             self.layouts.update({k:lout})
-            bt = ButtonTable.ButtonTable(lout)
+            bt = ButtonTable.ButtonTable(lout, testing=True)
             self.bts.update({k:bt})
 
     def test_rows(self):
@@ -68,23 +67,33 @@ class ButtonTableTest(unittest.TestCase):
     def test_frame_width(self):
         self.method_test_loop('frame_width')
 
-    def test_size(self):
-        void
+    def test_set_size(self):
+        for k,bt in self.bts.items():
+            result = self.results.get(k)
+            s = bt.set_sizes()
+            for name,size in s.items():
+                test = result.get(name)
+                self.assertEqual(size, test)
 
     def test_setup(self):
-        void
-
-    def test_draw(self):
-        d = self.bt.draw
-        self.assertEqual(d, "")
+        r = re.compile(r"rect|fill")
+        for k,bt in self.bts.items():
+            s = bt.setup()
+            for line in s:
+                self.assertTrue(r.match(line))
+                if (self.verbose):
+                    print(line)
 
     def test_run(self):
-        void
+        for k,bt in self.bts.items():
+            exit_code = bt.run()
+            self.assertFalse(exit_code)
 
     def test_pretty_print(self):
-        pp_string = "void"
-        pp = self.bt.pretty_print()
-        self.assertEqual(pp_string, pp)
+        r = re.compile(r"row|max|height")
+        for k, bt in self.bts.items():
+            pp = bt.pretty_print()
+            self.assertTrue(r.match(pp))
 
     def attribute_loop(self, name, value):
         for k,bt in self.bts.items():
@@ -98,7 +107,7 @@ class ButtonTableTest(unittest.TestCase):
             test = result.get(name)
             out = string_2_function.get(name)
             if self.verbose:
-                print(name + " test:" + str(test) + ", got=" + str(out))
+                print(k + " " + name + " test:" + str(test) + ", got=" + str(out))
             self.assertEqual(out, test)
 
 if __name__ == '__main__':
