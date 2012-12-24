@@ -17,7 +17,8 @@ setup(
     license = "Apache-2.0",
     keywords = "visual physics analytic animation quaternion processing",
     url = "http://qprocessing.atlassian.net",
-    packages=['visualphysics'],
+    packages=['visualphysics', 'visualphysics.layout'],
+    package_data={'':['processing-py.jar']},
     long_description=read('README.txt'),
     classifiers=[
         "Development Status :: 3 - Alpha",
