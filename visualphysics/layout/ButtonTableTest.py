@@ -89,10 +89,10 @@ class ButtonTableTest(unittest.TestCase):
             exit_code = bt.run()
             self.assertFalse(exit_code)
 
-    def test_pretty_print(self):
+    def test_pprint(self):
         r = re.compile(r"row|max|height")
         for k, bt in self.bts.items():
-            pp = bt.pretty_print()
+            pp = bt.pprint()
             self.assertTrue(r.match(pp))
 
     def attribute_loop(self, name, value):

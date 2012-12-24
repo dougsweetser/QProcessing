@@ -102,11 +102,12 @@ class ButtonTable:
         exit_code = runner.run()
         return exit_code
 
-    def pretty_print(self):
+    def pprint(self):
         self.set_sizes()
         s = "rows, columns, spacer: " + str(self.rows) + ", " + str(self.columns) + ", " + str(self.spacer) + "\n"
         s += "active height, width: " + str(self.sizes.get("active_height")) + ", " + str(self.sizes.get("active_width")) + "\n"
         s += "frame height, width: " + str(self.sizes.get("frame_height")) + ", " + str(self.sizes.get("frame_width")) + "\n"
+        print(s)
         return s
 
 if __name__ == '__main__':
@@ -120,6 +121,10 @@ if __name__ == '__main__':
     args_parser.add_argument('-l', '--landscape', action='store_true', default=False)
     args_parser.add_argument('--pprint', action='store_true', default=False)
     args = args_parser.parse_args()
+
+    if(not args.gui and not args.pprint):
+        print("You should set -g/--gui or --pprint.\nExiting.")
+        sys.exit(1)
 
     sizes = {'square':[500, 500], \
              'normal':[470, 320], \
@@ -146,9 +151,10 @@ if __name__ == '__main__':
         args.portrait = True
 
     lay = Layout.Layout(args.width, args.height, args.portrait)
+    bt = ButtonTable(lay)
 
     if(args.pprint):
-        lay.pprint()
+        bt.pprint()
 
     if(args.gui):
-        lay.run()
+        bt.run()
