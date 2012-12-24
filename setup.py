@@ -10,14 +10,15 @@ def read(fname):
 
 setup(
     name = "QProcessing",
-    version = "0.3.1",
+    version = "0.3.2",
     author = "Doug Sweetser",
     author_email = "sweetser@alum.mit.edu",
     description = ("Visual Physics App to see the math of Nature "),
     license = "Apache-2.0",
     keywords = "visual physics analytic animation quaternion processing",
     url = "http://qprocessing.atlassian.net",
-    packages=['visualphysics'],
+    packages=['visualphysics', 'visualphysics.layout'],
+    package_data={'':['processing-py.jar']},
     long_description=read('README.txt'),
     classifiers=[
         "Development Status :: 3 - Alpha",

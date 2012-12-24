@@ -14,43 +14,44 @@ Super class to organize where things go in the app.
 Author: sweetser@alum.mit.edu'''
 class Layout:
 
-    global update
-    update = True
-
-    def __init__(self, width=480, height=640, testing=False):
-        self.width = width
-        self.height = height
-        if (width > height):
-            self.app_max = width
-            self.app_min = height
-            self.portrait = False
+    def __init__(self, d1=480, d2=640, portrait=True, testing=False):
+        if (portrait):
+            self.width = min(d1, d2)
+            self.height = max(d1, d2)
         else:
-            self.app_min = height
-            self.app_max = width
-            self.portrait = True
+            self.width = max(d1, d2)
+            self.height = min(d1, d2)
+        self.portrait = portrait
+        self.update = True
         self.testing = testing
 
     def setup(self):
-        if (self.portrait):
-            result = "size( " + str(self.app_max) + ", " + str(self.app_min) +")"
-        else:
-            result = "size( " + str(self.app_min) + ", " + str(self.app_max) +")"
-        return result
+        s = []
+        s.append("fill(256, 256, 256)")
+        xy = str(self.width) + ", " + str(self.height)
+        s.append("size(" + xy +")")
+        s.append("rect(0, 0, " + xy + ")" ) 
+        return s
 
     def draw(self):
-        result = "background(100)"
-        return result
+        d = []
+        d.append("noLoop()")
+        return d
 
     def run(self):
         methods = co.OrderedDict()
-        methods["def setup():"] = [self.setup()]
-        methods["def draw():"] = [self.draw()]
+        methods["def setup():"] = self.setup()
+        methods["def draw():"] = self.draw()
         runner = RunProcessing.RunProcessing("Layout", methods, self.testing)
         exit_code = runner.run()
         return exit_code
 
+    def set_size(self):
+        bt = ButtonTable.ButtonTable(self)
+        bt.set_size()
+
     def pprint(self):
-        result = "app_max is: " + str(self.app_max) + "\napp_min is: " + str(self.app_min)
+        result = "width is: " + str(self.width) + "\nheight is: " + str(self.height)
         print(result)
         return result
 
