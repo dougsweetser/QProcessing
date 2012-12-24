@@ -1,2 +1,1 @@
-__all__ = ['Layout']
-import Layout
+__package__ = "visualphysics"
