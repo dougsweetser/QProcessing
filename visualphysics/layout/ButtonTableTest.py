@@ -4,7 +4,6 @@ import unittest
 import re
 
 import ButtonTable
-import Layout
 
 class ButtonTableTest(unittest.TestCase):
 
@@ -22,12 +21,9 @@ class ButtonTableTest(unittest.TestCase):
             'android_large':{'max':480, 'min':240, 'active_height':80, 'active_width':80, 'frame_height':76, 'frame_width':76, 'draw':''}, \
             'android_xl':{'max':720, 'min':360, 'active_height':120, 'active_width':120, 'frame_height':116, 'frame_width':116, 'draw':''}, \
             'iPhone':{'max':636, 'min':318, 'active_height':106, 'active_width':106, 'frame_height':102, 'frame_width':102, 'draw':''}}
-        self.layouts = {}
         self.bts = {}
-        for k,v in self.devices.items():
-            lout = Layout.Layout(v[0], v[1], portrait=v[2], testing=True)
-            self.layouts.update({k:lout})
-            bt = ButtonTable.ButtonTable(lout, testing=True)
+        for k, v in self.devices.items():
+            bt = ButtonTable.ButtonTable(v[0], v[1], portrait=v[2], testing=True)
             self.bts.update({k:bt})
 
     def test_rows(self):
@@ -40,12 +36,12 @@ class ButtonTableTest(unittest.TestCase):
         self.attribute_loop('spacer', 2)
 
     def test_show(self):
-        for k,bt in self.bts.items():
+        for k, bt in self.bts.items():
             show = bt.show()
             self.assertTrue(show)
 
     def test_hide(self):
-        for k,bt in self.bts.items():
+        for k, bt in self.bts.items():
             hide = bt.hide()
             self.assertFalse(hide)
 
@@ -68,11 +64,12 @@ class ButtonTableTest(unittest.TestCase):
         self.method_test_loop('frame_width')
 
     def test_set_size(self):
-        for k,bt in self.bts.items():
+        for k, bt in self.bts.items():
             result = self.results.get(k)
             s = bt.set_sizes()
-            for name,size in s.items():
-                test = result.get(name)
+            for name, size in s.items():
+                short_name = re.sub(r'button_table_', r'', name)
+                test = result.get(short_name)
                 self.assertEqual(size, test)
 
     def test_setup(self):
@@ -90,7 +87,7 @@ class ButtonTableTest(unittest.TestCase):
             self.assertFalse(exit_code)
 
     def test_pprint(self):
-        r = re.compile(r"row|max|height")
+        r = re.compile(r'row|max|height')
         for k, bt in self.bts.items():
             pp = bt.pprint()
             self.assertTrue(r.match(pp))
