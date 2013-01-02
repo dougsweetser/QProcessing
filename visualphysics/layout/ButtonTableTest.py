@@ -108,4 +108,5 @@ class ButtonTableTest(unittest.TestCase):
             self.assertEqual(out, test)
 
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(ButtonTableTest)
+    unittest.TextTestRunner(verbosity=2).run(suite)
