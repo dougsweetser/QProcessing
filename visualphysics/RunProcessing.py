@@ -3,6 +3,7 @@
 # Copyright 2012 by Douglas Sweetser, sweetser@alum.mit.edu
 # Licensed under the Apache License, Version 2.0.
 
+import sys
 import os
 import subprocess as sp
 import collections as co
