@@ -106,7 +106,7 @@ class ButtonTable(Layout.Layout):
         self.set_sizes()
         s = "rows, columns, spacer: " + str(self.rows) + ", " + str(self.columns) + ", " + str(self.spacer) + "\n"
         s += "active height, width: " + str(self.sizes.get("button_table_active_height")) + ", " + str(self.sizes.get("button_table_active_width")) + "\n"
-        s += "frame height, width: " + str(self.sizes.get("button_table_frame_height")) + ", " + str(self.sizes.get("button_table_frame_width")) + "\n"
+        s += "frame height, width: " + str(self.sizes.get("button_table_frame_height")) + ", " + str(self.sizes.get("button_table_frame_width"))
         print(s)
         return s
 
