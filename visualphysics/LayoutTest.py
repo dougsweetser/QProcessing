@@ -72,4 +72,5 @@ class LayoutTest(unittest.TestCase):
             self.assertFalse(exit_code)
          
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(LayoutTest)
+    unittest.TextTestRunner(verbosity=2).run(suite)

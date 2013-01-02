@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "QProcessing",
-    version = "0.3.2",
+    version = "0.3.3",
     author = "Doug Sweetser",
     author_email = "sweetser@alum.mit.edu",
     description = ("Visual Physics App to see the math of Nature "),

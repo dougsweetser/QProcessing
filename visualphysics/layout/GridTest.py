@@ -25,4 +25,5 @@ class GridTest(unittest.TestCase):
         self.assertEqual(pp_string, pp)
 
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(GridTest)
+    unittest.TextTestRunner(verbosity=2).run(suite)

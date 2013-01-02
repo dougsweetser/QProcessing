@@ -3,6 +3,7 @@
 # Copyright 2012 by Douglas Sweetser, sweetser@alum.mit.edu
 # Licensed under the Apache License, Version 2.0.
 
+import sys
 import os
 import subprocess as sp
 import collections as co
@@ -17,7 +18,15 @@ class RunProcessing:
         self.file_name = os.path.join(os.getcwd(), file_root + ".processing.py")
         self.methods = methods
         self.testing = testing
-        self.path_to_processing_py_jar = os.path.join(os.getcwd(), "processing-py.jar")
+        cwd_jar = os.path.join(os.getcwd(), "processing-py.jar")
+        par_jar = os.path.join(os.pardir, "processing-py.jar")
+        if (os.path.isfile(cwd_jar)):
+            self.path_to_processing_py_jar = cwd_jar
+        elif (os.path.isfile(par_jar)):
+            self.path_to_processing_py_jar = par_jar
+        else:
+            print("Unable to find needed processing-py.jar.\nExiting.")
+            sys.exit(1)
 
     def construct_processing_py(self):
         s = ''

@@ -15,12 +15,14 @@ Author: sweetser@alum.mit.edu'''
 class Layout:
 
     def __init__(self, d1=480, d2=640, portrait=True, testing=False):
+        self.app_min = min(d1, d2)
+        self.app_max = max(d1, d2)
         if (portrait):
-            self.width = min(d1, d2)
-            self.height = max(d1, d2)
+            self.width = self.app_min
+            self.height = self.app_max
         else:
-            self.width = max(d1, d2)
-            self.height = min(d1, d2)
+            self.width = self.app_max
+            self.height = self.app_min
         self.portrait = portrait
         self.update = True
         self.testing = testing

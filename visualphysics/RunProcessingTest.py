@@ -35,4 +35,5 @@ class RunProcessingTest(unittest.TestCase):
         self.assertFalse(exit_code)
          
 if __name__ == '__main__':
-    unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(RunProcessingTest)
+    unittest.TextTestRunner(verbosity=2).run(suite)

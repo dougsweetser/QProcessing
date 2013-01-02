@@ -22347,37 +22347,37 @@
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
        id="text14147"
-       y="706.59558"
-       x="789.4201"
+       y="706.53461"
+       x="735.4201"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
        xml:space="preserve"><tspan
-         y="706.59558"
-         x="789.4201"
+         y="706.53461"
+         x="735.4201"
          id="tspan14149"
-         sodipodi:role="line">Gutter.button_table_bottom</tspan></text>
+         sodipodi:role="line">gutter_button_table_bottom</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
-       d="m 762,697.36218 0,8.34315"
+       d="m 724,697.36218 0,8.34315"
        id="path14151"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       x="789.74756"
-       y="416.59558"
+       x="767.74756"
+       y="416.57074"
        id="text14153"
        sodipodi:linespacing="100%"
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
          sodipodi:role="line"
          id="tspan14155"
-         x="789.74756"
-         y="416.59558">Gutter.button_table_top</tspan></text>
+         x="767.74756"
+         y="416.57074">gutter_button_table_top</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path14157"
-       d="m 762,407.36218 0,11.87868"
+       d="m 754,407.36218 0,11.87868"
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)" />
     <text
        xml:space="preserve"
@@ -22390,7 +22390,7 @@
          sodipodi:role="line"
          id="tspan14161"
          x="753.38849"
-         y="734.55493">Gutter.right</tspan></text>
+         y="734.55493">gutter_right</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22408,7 +22408,7 @@
          y="734.20264"
          x="441.38855"
          id="tspan14167"
-         sodipodi:role="line">Gutter.center</tspan></text>
+         sodipodi:role="line">gutter_center</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 577.12132,729.53375 -23.02082,0"
@@ -22426,7 +22426,7 @@
          sodipodi:role="line"
          id="tspan14173"
          x="155.38852"
-         y="733.8797">Gutter.left</tspan></text>
+         y="733.8797">gutter_left</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22437,14 +22437,14 @@
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
        id="text14177"
-       y="772.34039"
-       x="563.34558"
+       y="772.33588"
+       x="559.34558"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
        xml:space="preserve"><tspan
-         y="772.34039"
-         x="563.34558"
+         y="772.33588"
+         x="559.34558"
          id="tspan14179"
-         sodipodi:role="line">Frame.width</tspan></text>
+         sodipodi:role="line">frame_width</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 551.9224,767.53375 -280.8219,0"
@@ -22468,7 +22468,7 @@
          sodipodi:role="line"
          id="tspan14191"
          x="97.56916"
-         y="573.81421">Frame.height</tspan></text>
+         y="573.81421">frame_height</tspan></text>
     <g
        id="g14273"
        transform="translate(102,-290)">
@@ -22504,7 +22504,7 @@
          sodipodi:role="line"
          id="tspan14281"
          x="723.35657"
-         y="756.52161">ButtonTable.min <tspan
+         y="756.52161">ButtonTable.min() <tspan
    style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
    id="tspan7057">(# menu_values)</tspan></tspan></text>
     <path
@@ -22524,7 +22524,7 @@
          y="562.59161"
          x="785.57562"
          id="tspan14287"
-         sodipodi:role="line">ButtonTable.max </tspan><tspan
+         sodipodi:role="line">ButtonTable.max() </tspan><tspan
          y="577.52063"
          x="785.57562"
          sodipodi:role="line"
@@ -22548,7 +22548,7 @@
          y="386.52332"
          x="725.78143"
          id="tspan14293"
-         sodipodi:role="line">ButtonTable.active_width</tspan></text>
+         sodipodi:role="line">button_table_active_width</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 716.79899,381.53375 -42.28428,0"
@@ -22572,19 +22572,19 @@
          sodipodi:role="line"
          id="tspan14301"
          x="725.81531"
-         y="356.52332">ButtonTable.frame_width</tspan></text>
+         y="356.52332">button_table_frame_width</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       x="813.74603"
-       y="448.33862"
+       x="745.74603"
+       y="448.26184"
        id="text14303"
        sodipodi:linespacing="100%"
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
          sodipodi:role="line"
          id="tspan14305"
-         x="813.74603"
-         y="448.33862">ButtonTable.active_height</tspan></text>
+         x="745.74603"
+         y="448.26184">button_table_active_height</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -22601,14 +22601,14 @@
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
        id="text14311"
-       y="491.07001"
-       x="813.69794"
+       y="490.99548"
+       x="747.69794"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
        xml:space="preserve"><tspan
-         y="491.07001"
-         x="813.69794"
+         y="490.99548"
+         x="747.69794"
          id="tspan14313"
-         sodipodi:role="line">ButtonTable.frame_height</tspan></text>
+         sodipodi:role="line">button_table_frame_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
@@ -22979,27 +22979,27 @@
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
        id="text6977"
-       y="515.75549"
-       x="45.63443"
+       y="515.80743"
+       x="91.63443"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
        xml:space="preserve"><tspan
-         y="515.75549"
-         x="45.63443"
+         y="515.80743"
+         x="91.63443"
          id="tspan6979"
-         sodipodi:role="line">Frame.sky_height</tspan></text>
+         sodipodi:role="line">sky_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       x="23.472393"
-       y="659.73065"
+       x="91.472382"
+       y="659.80743"
        id="text6981"
        sodipodi:linespacing="100%"
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        inkscape:transform-center-x="-16"><tspan
          sodipodi:role="line"
          id="tspan6983"
-         x="23.472393"
-         y="659.73065">Frame.ground_height</tspan></text>
+         x="91.472382"
+         y="659.80743">ground_height</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23017,7 +23017,7 @@
          sodipodi:role="line"
          id="tspan6989"
          x="441.76724"
-         y="398.20264">Boost.arrow_length</tspan></text>
+         y="398.20264">boost_arrow_length</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 308.12132,791.53375 -37.02082,0"
@@ -23028,14 +23028,14 @@
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
        sodipodi:linespacing="100%"
        id="text6993"
-       y="797.70404"
-       x="318.97375"
+       y="797.70178"
+       x="316.97375"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
        xml:space="preserve"><tspan
-         y="797.70404"
-         x="318.97375"
+         y="797.70178"
+         x="316.97375"
          id="tspan6995"
-         sodipodi:role="line">Rotation.arrow_length</tspan></text>
+         sodipodi:role="line">rotation_arrow_length</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
        d="m 425.12132,751.53375 -26.02082,0"
@@ -23045,15 +23045,15 @@
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       x="293.36368"
-       y="756.03552"
+       x="287.36368"
+       y="756.02875"
        id="text6999"
        sodipodi:linespacing="100%"
        transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
          sodipodi:role="line"
          id="tspan7001"
-         x="293.36368"
-         y="756.03552">Home.width</tspan></text>
+         x="287.36368"
+         y="756.02875">home_width</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23071,7 +23071,7 @@
          y="689.82098"
          x="103.43819"
          id="tspan7007"
-         sodipodi:role="line">Home.height</tspan></text>
+         sodipodi:role="line">home_height</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino;-inkscape-font-specification:Palatino"
@@ -23195,7 +23195,7 @@
          y="397.7442"
          x="35.767242"
          id="tspan7047"
-         sodipodi:role="line">Layout.height</tspan></text>
+         sodipodi:role="line">app_min</tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -23213,43 +23213,7 @@
          sodipodi:role="line"
          id="tspan7053"
          x="760.20447"
-         y="814.50806">Layout.width</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       x="58.55563"
-       y="709.8717"
-       id="text7059"
-       sodipodi:linespacing="100%"
-       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan7061"
-         x="58.55563"
-         y="709.8717">Gutter.frame_bottom</tspan></text>
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path7063"
-       d="m 256,697.36218 0,8.34315"
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)" />
-    <text
-       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
-       sodipodi:linespacing="100%"
-       id="text7065"
-       y="415.78259"
-       x="69.747559"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
-       xml:space="preserve"><tspan
-         y="415.78259"
-         x="69.747559"
-         id="tspan7067"
-         sodipodi:role="line">Gutter.frame_top</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
-       d="m 232,407.36218 0,11.87868"
-       id="path7069"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+         y="814.50806">app_max</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:30.89896965px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -23262,5 +23226,41 @@
          id="tspan5013"
          x="745.33734"
          y="417.45813">ButtonTable</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+       x="55.417847"
+       y="707.76678"
+       id="text5006"
+       sodipodi:linespacing="100%"
+       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan5008"
+         x="55.417847"
+         y="707.76678">gutter_frame_bottom</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5010"
+       d="m 260,699.36218 0,8.34315"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)" />
+    <text
+       transform="matrix(0.99999937,-0.00112523,0.00112523,0.99999937,0,0)"
+       sodipodi:linespacing="100%"
+       id="text5012"
+       y="419.80743"
+       x="91.741943"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Bold"
+       xml:space="preserve"><tspan
+         y="419.80743"
+         x="91.741943"
+         id="tspan5014"
+         sodipodi:role="line">gutter_frame_top</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+       d="m 256,411.36218 0,8.34315"
+       id="path5016"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

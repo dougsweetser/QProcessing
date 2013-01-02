@@ -14,10 +14,10 @@ import RunProcessing
 '''Class ButtonTable
 Calculates sizes needed for a Button Table.
 Author: sweetser@alum.mit.edu'''
-class ButtonTable:
+class ButtonTable(Layout.Layout):
 
-    def __init__(self, layout, testing=False):
-        self.layout = layout;
+    def __init__(self, d1=480, d2=640, portrait=True, testing=False):
+        super().__init__(d1, d2, portrait, testing)
         self.rows = 6
         self.columns = 3
         self.spacer = 2
@@ -34,48 +34,48 @@ class ButtonTable:
         return self.on
 
     def max(self):
-        app_min = min(self.layout.width, self.layout.height)
+        app_min = min(self.width, self.height)
         m = app_min - app_min % self.rows
-        self.sizes["max"] = m
+        self.sizes["button_table_max"] = m
         return m
 
     def min(self):
         m = self.max() / self.rows * self.columns
-        self.sizes["min"] = m
+        self.sizes["button_table_min"] = m
         return m
 
     def active_height(self):
         ah = self.max() / self.rows
-        self.sizes["active_height"] = ah
+        self.sizes["button_table_active_height"] = ah
         return ah
 
     def active_width(self):
         aw = self.min() / self.columns
-        self.sizes["active_width"] = aw
+        self.sizes["button_table_active_width"] = aw
         return aw
 
     def frame_height(self):
         fh = self.max() / self.rows - 2 * self.spacer
-        self.sizes["frame_height"] = fh
+        self.sizes["button_table_frame_height"] = fh
         return fh
 
     def frame_width(self):
         fw = self.min() / self.columns - 2 * self.spacer
-        self.sizes["frame_width"] = fw
+        self.sizes["button_table_frame_width"] = fw
         return fw
 
     def set_sizes(self):
-        max = self.max()
-        min = self.min()
-        ah = self.active_height()
-        aw = self.active_width()
-        fh = self.frame_height()
-        fw = self.frame_width()
+        self.max()
+        self.min()
+        self.active_height()
+        self.active_width()
+        self.frame_height()
+        self.frame_width()
         return self.sizes
 
     def setup(self):
-        app_min = min(self.layout.width, self.layout.height)
-        app_max = max(self.layout.width, self.layout.height)
+        app_min = min(self.width, self.height)
+        app_max = max(self.width, self.height)
         s = []
         s.append("rectMode(CORNERS)")
         s.append("fill(204, 102, 0)")
@@ -84,7 +84,7 @@ class ButtonTable:
         gmax = gutter + self.max()
         d2 = app_max
 
-        if (self.layout.portrait):
+        if (self.portrait):
             rect = "rect(" + str(gutter) + "," + str(d1)  + "," + str(gmax)  + "," + str(d2) + ")"
         else:
             rect = "rect(" + str(d1) + "," + str(gutter)  + "," + str(d2)  + "," + str(gmax) + ")"
@@ -93,10 +93,10 @@ class ButtonTable:
 
     def run(self):
         methods = co.OrderedDict()
-        s = self.layout.setup()
+        s = super().setup()
         s += self.setup()
         methods["def setup():"] = s
-        d = self.layout.draw()
+        d = self.draw()
         methods["def draw():"] = d
         runner = RunProcessing.RunProcessing("ButtonTable", methods, self.testing)
         exit_code = runner.run()
@@ -105,8 +105,8 @@ class ButtonTable:
     def pprint(self):
         self.set_sizes()
         s = "rows, columns, spacer: " + str(self.rows) + ", " + str(self.columns) + ", " + str(self.spacer) + "\n"
-        s += "active height, width: " + str(self.sizes.get("active_height")) + ", " + str(self.sizes.get("active_width")) + "\n"
-        s += "frame height, width: " + str(self.sizes.get("frame_height")) + ", " + str(self.sizes.get("frame_width")) + "\n"
+        s += "active height, width: " + str(self.sizes.get("button_table_active_height")) + ", " + str(self.sizes.get("button_table_active_width")) + "\n"
+        s += "frame height, width: " + str(self.sizes.get("button_table_frame_height")) + ", " + str(self.sizes.get("button_table_frame_width"))
         print(s)
         return s
 
@@ -150,8 +150,7 @@ if __name__ == '__main__':
     elif (not args.landscape and not args.portrait):
         args.portrait = True
 
-    lay = Layout.Layout(args.width, args.height, args.portrait)
-    bt = ButtonTable(lay)
+    bt = ButtonTable(args.width, args.height, args.portrait)
 
     if(args.pprint):
         bt.pprint()

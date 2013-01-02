@@ -1,4 +1,7 @@
 __pycache__
 Layout.processing.py
 RunProcessingTest.processing.py
+ButtonTable.processing.py
+Frame.processing.py
 *.processing.py 
+*.pyc
