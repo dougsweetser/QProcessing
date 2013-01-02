@@ -1,4 +1,20 @@
 
+0.3.3 / 2013-01-01 
+==================
+Created module Frame where the animation will reside.
+Created module Gutter to calculate space between Frame and Button table.
+Elements in layout directory are now subclasses of Layout.
+
+Detailed work
+  * Updated naming conventions for distance elements.
+  * visualphysics_test.py runs all tests.
+  * Added class Gutter which calculates spaces between the Frame and ButtonTable classes.
+  * Added class Frame which is where the animations will reside.
+  * Tests are part of a test_suite.
+  * Added app_min, app_max variables.
+  * Using Layout as a superclass, as it should be.
+  * Can find processing-py.jar if in the parent directory.
+
 0.3.2 / 2012-12-23 
 ==================
 Created module ButtonTable that calculates some values it needs.
