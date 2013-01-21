@@ -2,6 +2,7 @@
 
 import os
 import collections as co
+import re
 import unittest
 
 import RunProcessing
@@ -22,9 +23,18 @@ class RunProcessingTest(unittest.TestCase):
         s = self.runner.construct_processing_py()
         self.assertEqual(r, s)
 
+    def test_contruct_processing_pde(self):
+        r = re.compile(r'void')
+        s = self.runner.construct_processing_pde()
+        self.assertTrue(r.match(s))
+
     def test_write_processing_py(self):
         self.runner.write_processing_py()
-        self.assertTrue(os.path.isfile(self.runner.file_name))
+        self.assertTrue(os.path.isfile(self.runner.file_name_py))
+
+    def test_write_processing_pde(self):
+        self.runner.write_processing_pde()
+        self.assertTrue(os.path.isfile(self.runner.file_name_pde))
 
     def test_run_processing_py(self):
         exit_code = self.runner.run_processing_py()

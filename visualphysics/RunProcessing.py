@@ -5,6 +5,7 @@
 
 import sys
 import os
+import re
 import subprocess as sp
 import collections as co
 import argparse as ap
@@ -15,7 +16,11 @@ Author: sweetser@alum.mit.edu'''
 class RunProcessing:
 
     def __init__(self, file_root, methods, testing=False):
-        self.file_name = os.path.join(os.getcwd(), file_root + ".processing.py")
+        dir = os.path.join(os.getcwd(), 'pde', file_root)
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+        self.file_name_pde = os.path.join(dir, file_root + ".pde")
+        self.file_name_py = os.path.join(os.getcwd(), 'pde', file_root + ".processing.py")
         self.methods = methods
         self.testing = testing
         cwd_jar = os.path.join(os.getcwd(), "processing-py.jar")
@@ -36,9 +41,26 @@ class RunProcessing:
                 s += "    " + line + "\n"
         return s
 
+    def construct_processing_pde(self):
+        s = ''
+        for method, array_of_strings in self.methods.items():
+            v = re.sub(r'def\s', r'void ', method)
+            s += re.sub(r':', r'{\n', v)
+            for line in array_of_strings:
+                s += "    " + line + ";\n"
+            s += "}\n"
+        return s
+
     def write_processing_py(self):
-        f = open(self.file_name, 'w')
+        f = open(self.file_name_py, 'w')
         s = self.construct_processing_py()
+        f.write(s)
+        f.close()
+        return 1
+
+    def write_processing_pde(self):
+        f = open(self.file_name_pde, 'w')
+        s = self.construct_processing_pde()
         f.write(s)
         f.close()
         return 1
@@ -46,9 +68,9 @@ class RunProcessing:
     def run_processing_py(self):
         try:
             if (self.testing):
-                error_code = sp.check_call(["java", "-jar", self.path_to_processing_py_jar, self.file_name], timeout=10)
+                error_code = sp.check_call(["java", "-jar", self.path_to_processing_py_jar, self.file_name_py], timeout=10)
             else:
-                error_code = sp.check_call(["java", "-jar", self.path_to_processing_py_jar, self.file_name])
+                error_code = sp.check_call(["java", "-jar", self.path_to_processing_py_jar, self.file_name_py])
         except sp.TimeoutExpired as te:
             error_code = 0
         return error_code
