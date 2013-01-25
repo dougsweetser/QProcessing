@@ -8,7 +8,7 @@ import RunProcessingTest
 
 sys.path.append('layout')
 import ButtonTableTest
-import FrameTest
+import AFrameTest
 import GridTest
 import GutterTest
 
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     tests.append(unittest.TestLoader().loadTestsFromTestCase(LayoutTest.LayoutTest))
     tests.append(unittest.TestLoader().loadTestsFromTestCase(RunProcessingTest.RunProcessingTest))
     tests.append(unittest.TestLoader().loadTestsFromTestCase(ButtonTableTest.ButtonTableTest))
-    tests.append(unittest.TestLoader().loadTestsFromTestCase(FrameTest.FrameTest))
+    tests.append(unittest.TestLoader().loadTestsFromTestCase(AFrameTest.AFrameTest))
     tests.append(unittest.TestLoader().loadTestsFromTestCase(GridTest.GridTest))
     tests.append(unittest.TestLoader().loadTestsFromTestCase(GutterTest.GutterTest))
     all_tests = unittest.TestSuite(tests)

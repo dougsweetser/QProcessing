@@ -19,11 +19,11 @@ class GutterTest(unittest.TestCase):
              'android_xl':[960, 720, True], \
              'iPhone':[960, 640, False]}
         self.results = \
-            {'square':{'button_table_top':1, 'button_table_bottom':1, 'frame_top':124, 'frame_bottom':125, 'left':0, 'center':0, 'right':0, 'frame_width':79}, \
-            'android_normal':{'button_table_top':1,'button_table_bottom':1, 'frame_top':4, 'frame_bottom':5, 'left':0, 'center':0, 'right':0}, \
-            'android_large':{'button_table_top':0, 'button_table_bottom':0, 'frame_top':40, 'frame_bottom':40, 'left':0, 'center':0, 'right':0}, \
-            'android_xl':{'button_table_top':0, 'button_table_bottom':0, 'frame_top':60, 'frame_bottom':60, 'left':0, 'center':0, 'right':0}, \
-            'iPhone':{'button_table_top':2, 'button_table_bottom':2, 'frame_top':0, 'frame_bottom':0, 'left':1, 'center':1, 'right':0}}
+            {'square':{'button_table_top':1, 'button_table_bottom':1, 'aframe_top':124, 'aframe_bottom':125, 'left':0, 'center':0, 'right':0, 'aframe_width':79}, \
+            'android_normal':{'button_table_top':1,'button_table_bottom':1, 'aframe_top':4, 'aframe_bottom':5, 'left':0, 'center':0, 'right':0}, \
+            'android_large':{'button_table_top':0, 'button_table_bottom':0, 'aframe_top':40, 'aframe_bottom':40, 'left':0, 'center':0, 'right':0}, \
+            'android_xl':{'button_table_top':0, 'button_table_bottom':0, 'aframe_top':60, 'aframe_bottom':60, 'left':0, 'center':0, 'right':0}, \
+            'iPhone':{'button_table_top':2, 'button_table_bottom':2, 'aframe_top':0, 'aframe_bottom':0, 'left':1, 'center':1, 'right':0}}
         self.layouts = {}
         self.guts = {}
         for k,v in self.devices.items():

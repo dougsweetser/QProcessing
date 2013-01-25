@@ -36,7 +36,8 @@ class RunProcessing:
     def construct_processing_py(self):
         s = ''
         for method, array_of_strings in self.methods.items():
-            s += method + "\n"
+            mpy = re.sub(r'(^void_)|(^int_)|(^String_)', r'def ', method)
+            s += mpy + "\n"
             for line in array_of_strings:
                 s += "    " + line + "\n"
         return s
@@ -44,8 +45,8 @@ class RunProcessing:
     def construct_processing_pde(self):
         s = ''
         for method, array_of_strings in self.methods.items():
-            v = re.sub(r'def\s', r'void ', method)
-            s += re.sub(r':', r'{\n', v)
+            mj = re.sub(r'_', r' ', method)
+            s += re.sub(r':', r'{\n', mj)
             for line in array_of_strings:
                 s += "    " + line + ";\n"
             s += "}\n"
@@ -76,6 +77,8 @@ class RunProcessing:
         return error_code
 
     def run(self):
+        self.construct_processing_pde()
+        self.write_processing_pde()
         self.construct_processing_py()
         self.write_processing_py()
         error_code = self.run_processing_py()
@@ -99,8 +102,8 @@ if __name__ == '__main__':
         args.draw.append("background(100)")
 
     methods = co.OrderedDict()
-    methods["def setup():"] = args.setup
-    methods["def draw():"] = args.draw
+    methods["void_setup():"] = args.setup
+    methods["void_draw():"] = args.draw
 
     runner = RunProcessing("RunProcessing", methods)
     runner.run()

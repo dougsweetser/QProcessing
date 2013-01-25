@@ -11,8 +11,8 @@ class RunProcessingTest(unittest.TestCase):
 
     def setUp(self):
         methods = co.OrderedDict()
-        methods["def setup():"] = ["size(200, 400)"]
-        methods["def draw():"] = ["background(200)"]
+        methods["void_setup():"] = ["size(200, 400)"]
+        methods["void_draw():"] = ["background(200)"]
         self.runner = RunProcessing.RunProcessing("RunProcessingTest", methods, testing=True)
 
     def test_path_to_processing_py_jar(self):
