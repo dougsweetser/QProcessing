@@ -3,5 +3,6 @@ Layout.processing.py
 RunProcessingTest.processing.py
 ButtonTable.processing.py
 Frame.processing.py
+pde
 *.processing.py 
 *.pyc

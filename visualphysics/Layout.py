@@ -31,7 +31,7 @@ class Layout:
         s = []
         s.append("fill(256, 256, 256)")
         xy = str(self.width) + ", " + str(self.height)
-        s.append("size(" + xy +")")
+        s.append("size(" + xy +", P3D)")
         s.append("rect(0, 0, " + xy + ")" ) 
         return s
 
@@ -42,8 +42,8 @@ class Layout:
 
     def run(self):
         methods = co.OrderedDict()
-        methods["def setup():"] = self.setup()
-        methods["def draw():"] = self.draw()
+        methods["void_setup():"] = self.setup()
+        methods["void_draw():"] = self.draw()
         runner = RunProcessing.RunProcessing("Layout", methods, self.testing)
         exit_code = runner.run()
         return exit_code

@@ -10,17 +10,17 @@ import argparse as ap
 sys.path.append("..")
 import Layout
 import ButtonTable
-import Frame
+import AFrame
 
 '''Class Gutter
-Calculates sizes of spaces between Frame and ButtonTable.
+Calculates sizes of spaces between AFrame and ButtonTable.
 Author: sweetser@alum.mit.edu'''
 class Gutter(Layout.Layout):
 
-    def __init__(self, d1=640, d2=480, portrait=True, testing=False):
+    def __init__(self, d1=480, d2=800, portrait=True, testing=False):
         super().__init__(d1, d2, portrait, testing)
         self.button_table = ButtonTable.ButtonTable(d1, d2, portrait, testing)
-        self.frame = Frame.Frame(d1, d2, portrait, testing)
+        self.aframe = AFrame.AFrame(d1, d2, portrait, testing)
         self.sizes = co.OrderedDict() 
         self.testing = testing
 
@@ -37,24 +37,24 @@ class Gutter(Layout.Layout):
         self.sizes["gutter_button_table_bottom"] = gb
         return gb
 
-    def frame_top(self):
-        fh = self.frame.frame_height()
+    def aframe_top(self):
+        fh = self.aframe.aframe_height()
         ft = round((self.app_min - fh)/2)
-        self.sizes["gutter_frame_top"] = ft
+        self.sizes["gutter_aframe_top"] = ft
         return ft
 
-    def frame_bottom(self):
-        fh = self.frame.frame_height()
+    def aframe_bottom(self):
+        fh = self.aframe.aframe_height()
         ft = round((self.app_min - fh)/2)
         fb = self.app_min - fh - ft
-        self.sizes["gutter_frame_bottom"] = fb
+        self.sizes["gutter_aframe_bottom"] = fb
         return fb
 
     def open_space(self):
         #print("app_max: " + str(self.app_max))
         #print("frame_width: " + str(self.frame.frame_width()))
         #print("bt.min(): " + str(self.button_table.min()))
-        os = self.app_max - self.frame.frame_width() - self.button_table.min()
+        os = self.app_max - self.aframe.aframe_width() - self.button_table.min()
         return os
 
     def left(self):
@@ -76,8 +76,8 @@ class Gutter(Layout.Layout):
     def set_sizes(self):
         self.button_table_top()
         self.button_table_bottom()
-        self.frame_top()
-        self.frame_bottom()
+        self.aframe_top()
+        self.aframe_bottom()
         self.left()
         self.center()
         self.right()
@@ -86,7 +86,7 @@ class Gutter(Layout.Layout):
     def pprint(self):
         self.set_sizes()
         s = "gutter button_table top, bottom: " + str(self.sizes.get("gutter_button_table_top")) + ", " + str(self.sizes.get("gutter_button_table_bottom")) + "\n"
-        s += "gutter frame top, bottom: " + str(self.sizes.get("gutter_frame_top")) + ", " + str(self.sizes.get("gutter_frame_bottom")) + "\n"
+        s += "gutter aframe top, bottom: " + str(self.sizes.get("gutter_aframe_top")) + ", " + str(self.sizes.get("gutter_aframe_bottom")) + "\n"
         s += "gutter left, center, right: " + str(self.sizes.get("gutter_left")) + ", " + str(self.sizes.get("gutter_center")) + ", " + str(self.sizes.get("gutter_right"))
         print(s)
         return s
@@ -109,7 +109,7 @@ if __name__ == '__main__':
     sizes = {'square':[500, 500], \
              'normal':[470, 320], \
              'large':[640, 480], \
-             'xl':[960, 720], \
+             'xl':[480, 800], \
              'iphone':[960, 640], \
              'ipad':[2048, 1536]}
 

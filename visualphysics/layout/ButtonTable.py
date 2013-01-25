@@ -95,9 +95,9 @@ class ButtonTable(Layout.Layout):
         methods = co.OrderedDict()
         s = super().setup()
         s += self.setup()
-        methods["def setup():"] = s
+        methods["void_setup():"] = s
         d = self.draw()
-        methods["def draw():"] = d
+        methods["void_draw():"] = d
         runner = RunProcessing.RunProcessing("ButtonTable", methods, self.testing)
         exit_code = runner.run()
         return exit_code
