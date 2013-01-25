@@ -4,10 +4,10 @@ import sys
 import unittest
 import re
 
-import Frame
+import AFrame
 import Layout
 
-class FrameTest(unittest.TestCase):
+class AFrameTest(unittest.TestCase):
 
     def setUp(self):
         self.verbose = True
@@ -18,22 +18,22 @@ class FrameTest(unittest.TestCase):
              'android_xl':[960, 720, True], \
              'iPhone':[960, 640, False]}
         self.results = \
-            {'square':{'frame_height':251, 'frame_width':251, 'sky_height':151, 'ground_height':100}, \
-            'android_normal':{'frame_height':311, 'frame_width':311, 'sky_height':187, 'ground_height':124}, \
-            'android_large':{'frame_height':400, 'frame_width':400, 'sky_height':240, 'ground_height':160}, \
-            'android_xl':{'frame_height':600, 'frame_width':600, 'sky_height':360, 'ground_height':240}, \
-            'iPhone':{'frame_height':640, 'frame_width':640, 'sky_height':384, 'ground_height':256}}
+            {'square':{'aframe_height':251, 'aframe_width':251, 'sky_height':151, 'ground_height':100}, \
+            'android_normal':{'aframe_height':311, 'aframe_width':311, 'sky_height':187, 'ground_height':124}, \
+            'android_large':{'aframe_height':400, 'aframe_width':400, 'sky_height':240, 'ground_height':160}, \
+            'android_xl':{'aframe_height':600, 'aframe_width':600, 'sky_height':360, 'ground_height':240}, \
+            'iPhone':{'aframe_height':640, 'aframe_width':640, 'sky_height':384, 'ground_height':256}}
         self.layouts = {}
         self.frs = {}
         for k, v in self.devices.items():
-            fr = Frame.Frame(v[0], v[1], portrait=v[2], testing=True)
+            fr = AFrame.AFrame(v[0], v[1], portrait=v[2], testing=True)
             self.frs.update({k:fr})
 
-    def test_frame_height(self):
-        self.method_test_loop('frame_height')
+    def test_aframe_height(self):
+        self.method_test_loop('aframe_height')
 
-    def test_frame_width(self):
-        self.method_test_loop('frame_width')
+    def test_aframe_width(self):
+        self.method_test_loop('aframe_width')
  
     def test_sky_height(self):
         self.method_test_loop('sky_height')
@@ -72,7 +72,7 @@ class FrameTest(unittest.TestCase):
 
     def method_test_loop(self, name):
         for k, fr in self.frs.items():
-            string_2_function = {'frame_height':fr.frame_height(), 'frame_width':fr.frame_width(), 'sky_height':fr.sky_height(), 'ground_height':fr.ground_height()}
+            string_2_function = {'aframe_height':fr.aframe_height(), 'aframe_width':fr.aframe_width(), 'sky_height':fr.sky_height(), 'ground_height':fr.ground_height()}
             result = self.results.get(k)
             test = result.get(name)
             out = string_2_function.get(name)
@@ -81,5 +81,5 @@ class FrameTest(unittest.TestCase):
             self.assertEqual(out, test)
 
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(FrameTest)
+    suite = unittest.TestLoader().loadTestsFromTestCase(AFrameTest)
     unittest.TextTestRunner(verbosity=2).run(suite)
