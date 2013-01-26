@@ -34,11 +34,11 @@ class Icon():
         return ps
 
     def _show_full_screen_setup(self, scale, color):
-        sfs = var_is_func_string('ps_csg_sfs, 'createShape', 'GROUP')
+        sfs = var_is_func_string('ps_csg_sfs', 'createShape', 'GROUP')
         sfs += var_is_func_string('ps_cs_1', 'createShape')
         sfs += func_string(
 
-        sfs = 'ps_csg_sfs = createShape(GROUP);\n'
+        sfs += 'ps_csg_sfs = createShape(GROUP);\n'
         sfs += 'ps_cs_1 = createShape();\n'
         sfs += 'ps_cs_1.noFill();\n'
         sfs += 'ps_cs_1.stroke(color);\n'
@@ -123,7 +123,7 @@ class Icon():
 
     def var_is_func_string(self, func, args=''):
         s = var + ' = ' + func + '( '
-        if (arg):
+        if (args):
             s += args
         s += ');\n'
         return s
